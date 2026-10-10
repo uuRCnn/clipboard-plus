@@ -1,0 +1,673 @@
+# Ukrainian translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "Скопійовано"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "Буфер обміну"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "Типовий"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "Спокійний список в один рядок"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "Програма-джерело та час"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "Картки"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "Великі попередні перегляди"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "Компактний"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "Більше записів, менше місця"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "Ніколи"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "Кожні 30 хвилин"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "Щогодини"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "Кожні 6 годин"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "Щодня"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "Щотижня"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "Відкрити буфер обміну"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "Скопіювати старіший запис"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "Скопіювати новіший запис"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "Очистити історію"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "Перемкнути приватний режим"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "Гучність"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "Відтворити"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "Загальні"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "Поведінка"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "Вставляти під час вибору"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "Вставляти в активне вікно після вибору запису"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "Переміщувати використані записи вгору"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "Обрізати пробіли"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "Вилучати пробіли й розриви рядків навколо скопійованого тексту"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "Розмір історії"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "Закріплені записи не враховуються"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "Відгук"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "Анімації"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "Відкриття вікна, переміщення виділення та картка перегляду"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "Анімувати значок на панелі"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "Коротка пульсація під час копіювання"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "Звукові ефекти"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "Під час відкриття вікна та вибору запису"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "Звук відкриття"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "Звук вибору"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "Сповіщення під час копіювання"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "Пошук"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "З урахуванням регістру"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "Регулярні вирази"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "Вигляд"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "Компонування"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "Як виглядає вікно буфера обміну"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "Подробиці"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "Показувати час"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "Скільки часу тому скопійовано кожен запис"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "Картка перегляду"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "Великий перегляд вибраного запису поруч із вікном"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "Показувати картку перегляду"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "Затримка для миші"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "Мілісекунди"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "Затримка для стрілок"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "Приватність"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "Приватний режим"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "Поки його ввімкнено, нічого не записується"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "Додати програму"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "Виключені програми"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"Те, що копіюється в цих програмах, ніколи не записується. Менеджери паролів "
+"типово виключено."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "Вилучити"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "Немає виключених програм"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "Зберігання"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "Пам’ятати історію"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "Зберігати записи після виходу із сеансу або перезапуску"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "Пам’ятати лише закріплені записи"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "Записувати зображення"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "Найбільше зображення"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "Мегабайти"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "Автоматичне очищення"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "Закріплені записи завжди зберігаються"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "Очищати після перезапуску"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "Очистити історію"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "Питати перед очищенням"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "Шукати програми"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "Скорочення"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "Глобальні скорочення"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "Увімкнути скорочення"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "Усередині вікна"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "Пробіл"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "Відкривати посилання й файли клавішею"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "Пробіл збільшує все інше"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "Переміщати виділення — картка перегляду стежить за ним"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "Скопіювати (і вставити, якщо ввімкнено)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "Введення"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "Миттєвий пошук"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "Застосувати запропонований фільтр"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "Закріпити / відкріпити"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "Змінити текст"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "Додати мітку"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "Видалити запис"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "Скопіювати запис 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "Очистити пошук, потім закрити"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "Натисніть скорочення"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc — скасувати · Backspace — вимкнути"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "Про програму"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "Версія %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "Створено Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "Сайт і вихідний код"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "Повідомити про проблему"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "Береже батарею"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ ніколи не опитує буфер постійно. Він прокидається лише тоді, коли "
+"змінюється буфер обміну, будує список лише під час відкриття і записує на "
+"диск не частіше ніж раз на дві секунди."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "Змінити запис"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "Мітка запису"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "Коротка мітка, яка показується у списку і доступна для пошуку."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "напр. Робота, Адреса, Токен"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "Зберегти"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "Зображення"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "Посилання"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "Код"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "Кольори"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "Закріплені"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "Файли"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "Текст"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "Налаштування"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Натисніть Tab, щоб відфільтрувати: %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "Закріплені"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "Історія"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "Ще нічого не скопійовано"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "Нічого не знайдено"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "Приватний режим увімкнено — копії не записуються"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "Тут з’являться скопійовані тексти й зображення"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "Спробуйте інший запит або фільтр"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "Показати в теці"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "Відкріпити"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "Закріпити"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "Видалити"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "Очистити історію буфера обміну?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "Буде видалено всі записи, крім закріплених. Цю дію не можна скасувати."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "Очистити"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "Не вдалося відкрити"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "Відкрити"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "зараз"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s тому"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "Закрити"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "Збільшити"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "Зображення"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d елемент"
+msgstr[1] "%d елементи"
+msgstr[2] "%d елементів"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d символ"
+msgstr[1] "%d символи"
+msgstr[2] "%d символів"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d рядок"
+msgstr[1] "%d рядки"
+msgstr[2] "%d рядків"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "Посилання"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d хв"
+msgstr[1] "%d хв"
+msgstr[2] "%d хв"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d год"
+msgstr[1] "%d год"
+msgstr[2] "%d год"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "учора"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d день"
+msgstr[1] "%d дні"
+msgstr[2] "%d днів"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "Зображення — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s і ще %d"

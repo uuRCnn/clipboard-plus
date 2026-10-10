@@ -1,0 +1,657 @@
+# Chinese (Simplified) translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "已复制"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "剪贴板"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "默认"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "简洁的单行列表"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "聚焦"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "来源应用和时间"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "卡片"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "大尺寸预览"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "紧凑"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "最小空间，最多条目"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "从不"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "每 30 分钟"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "每小时"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "每 6 小时"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "每天"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "每周"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "打开剪贴板"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "复制较早的条目"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "复制较新的条目"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "清除历史记录"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "切换隐私模式"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "音量"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "播放"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "常规"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "行为"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "选择时粘贴"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "选择条目后粘贴到当前窗口"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "将使用过的条目移到顶部"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "去除空白"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "去除复制文本前后的空格和换行"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "历史记录大小"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "已固定的条目不计入"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "反馈"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "动画"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "打开弹窗、移动选择和预览卡片"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "面板图标动画"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "复制内容时短暂闪动"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "音效"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "打开弹窗和选择条目时"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "打开音效"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "选择音效"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "复制时通知"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "搜索"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "区分大小写"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "正则表达式"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "外观"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "布局"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "剪贴板弹窗的外观"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "详细信息"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "显示时间"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "每个条目复制于多久之前"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "预览卡片"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "在弹窗旁显示所选条目的大预览"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "显示预览卡片"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "鼠标延迟"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "毫秒"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "方向键延迟"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "隐私"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "隐私模式"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "开启时不记录任何内容"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "添加应用"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "排除的应用"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr "在这些应用中复制的内容永远不会被记录。密码管理器默认已排除。"
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "移除"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "没有排除的应用"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "存储"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "记住历史记录"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "注销或重启后保留条目"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "仅记住已固定的条目"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "记录图片"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "最大图片"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "MB"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "自动清理"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "已固定的条目始终保留"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "重启后清除"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "清除历史记录"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "清除前询问"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "搜索应用"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "快捷键"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "全局快捷键"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "启用快捷键"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "已禁用"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "弹窗内"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "空格"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "打开链接和文件的按键"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "空格键放大其他所有内容"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "移动选择——预览卡片随之移动"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "复制（如已启用则粘贴）"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "输入"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "即时搜索"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "应用建议的筛选器"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "固定 / 取消固定"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "编辑文本"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "添加标签"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "删除条目"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "复制第 1–9 个条目"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "清除搜索，然后关闭"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "按下快捷键"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc 取消 · Backspace 禁用"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "关于"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "版本 %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "由 Dukha 制作"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "网站和源代码"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "报告问题"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "省电"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ 从不轮询。它只在剪贴板变化时唤醒，只在你打开时才构建列表，并且最多"
+"每两秒写入一次磁盘。"
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "编辑条目"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "为条目添加标签"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "在列表中显示并可搜索的简短标签。"
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "例如：工作、地址、令牌"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "取消"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "保存"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "图片"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "链接"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "代码"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "颜色"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "已固定"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "文件"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "文本"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "设置"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "按 Tab 按“%s”筛选"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "已固定"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "历史记录"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "尚未复制任何内容"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "无结果"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "隐私模式已开启——复制内容不会被记录"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "复制的文本和图片会显示在这里"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "请尝试其他搜索或筛选器"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "在文件夹中显示"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "取消固定"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "固定"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "删除"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "清除剪贴板历史记录？"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "除已固定的条目外，所有条目都将被删除。此操作无法撤销。"
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "清除"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "无法打开"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "打开"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "刚刚"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s前"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "关闭"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "放大"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "图片"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d 项"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d 个字符"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d 行"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "链接"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d 分钟"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d 小时"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "昨天"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d 天"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "图片 — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s 及其他 %d 项"

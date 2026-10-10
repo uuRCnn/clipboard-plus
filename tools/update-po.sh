@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
-# Re-extract strings, refresh tr.po and compile .mo files into build/locale.
+# Re-extract strings, merge them into every po/<lang>.po and compile .mo
+# files into build/locale. New or changed strings show up as untranslated
+# or fuzzy entries (msgfmt --statistics lists them).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 xgettext --from-code=UTF-8 -k_ -kngettext:1,2 -kpgettext:1c,2 -kN_ --language=JavaScript \
     -o po/clipboard-plus.pot --package-name="Clipboard+" \
     --msgid-bugs-address="https://github.com/uuRCnn/clipboard-plus/issues" \
     src/extension.js src/prefs.js src/lib/*.js
-python3 tools/po-tr.py
 for po in po/*.po; do
     lang=$(basename "$po" .po)
+    msgmerge --quiet --update --backup=none "$po" po/clipboard-plus.pot
     mkdir -p "build/locale/$lang/LC_MESSAGES"
     msgfmt --check -o "build/locale/$lang/LC_MESSAGES/clipboard-plus.mo" "$po"
 done

@@ -4,9 +4,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
-"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
 "Language-Team: Turkish\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -263,8 +264,12 @@ msgid "Excluded Applications"
 msgstr "Hariç Tutulan Uygulamalar"
 
 #: src/prefs.js:232
-msgid "Copies made in these apps are never recorded. Password managers are excluded by default."
-msgstr "Bu uygulamalarda yapılan kopyalar asla kaydedilmez. Şifre yöneticileri varsayılan olarak hariçtir."
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"Bu uygulamalarda yapılan kopyalar asla kaydedilmez. Şifre yöneticileri "
+"varsayılan olarak hariçtir."
 
 #: src/prefs.js:251
 msgid "Remove"
@@ -440,8 +445,14 @@ msgid "Battery Friendly"
 msgstr "Pil Dostu"
 
 #: src/prefs.js:500
-msgid "Clipboard+ never polls. It only wakes up when the clipboard changes, builds its list only when you open it, and writes to disk at most once every two seconds."
-msgstr "Clipboard+ hiçbir zaman sürekli kontrol yapmaz. Yalnızca pano değiştiğinde uyanır, listeyi yalnızca siz açtığınızda oluşturur ve diske en fazla iki saniyede bir yazar."
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ hiçbir zaman sürekli kontrol yapmaz. Yalnızca pano değiştiğinde "
+"uyanır, listeyi yalnızca siz açtığınızda oluşturur ve diske en fazla iki "
+"saniyede bir yazar."
 
 #: src/lib/dialogs.js:25
 msgid "Edit Entry"

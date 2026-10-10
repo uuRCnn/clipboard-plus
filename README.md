@@ -26,7 +26,8 @@ Open it with <kbd>Alt</kbd>+<kbd>C</kbd>.
 - **Paste on select** — the chosen entry is pasted where your cursor is (on by default, terminals included)
 - **Automatic cleanup** — after restart, or every 30 minutes … week; pinned entries are always kept
 - Follows the **system accent color** and **light / dark** style
-- English and Turkish
+- **18 languages** — English, Arabic, Chinese (Simplified and Traditional), French, German, Indonesian, Italian,
+  Japanese, Korean, Persian, Polish, Portuguese (Brazil), Russian, Spanish, Thai, Turkish, Ukrainian, Vietnamese
 
 | Search with filters | Light style |
 | --- | --- |
@@ -91,7 +92,8 @@ private XDG directories and a headless virtual monitor.
 
 ### Translations
 
-Add `po/<lang>.po` based on `po/clipboard-plus.pot` and open a pull request.
+Corrections and new languages are welcome: edit or add `po/<lang>.po` (based on `po/clipboard-plus.pot`)
+and open a pull request.
 
 ## Privacy
 

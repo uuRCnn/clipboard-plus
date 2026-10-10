@@ -1,0 +1,674 @@
+# Russian translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "Скопировано"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "Буфер обмена"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "По умолчанию"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "Спокойный список в одну строку"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "Приложение-источник и время"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "Карточки"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "Крупные превью"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "Компактный"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "Больше записей, меньше места"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "Никогда"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "Каждые 30 минут"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "Каждый час"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "Каждые 6 часов"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "Каждый день"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "Каждую неделю"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "Открыть буфер обмена"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "Скопировать более старую запись"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "Скопировать более новую запись"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "Очистить историю"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "Переключить приватный режим"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "Громкость"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "Воспроизвести"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "Общие"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "Поведение"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "Вставлять при выборе"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "Вставлять в активное окно после выбора записи"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "Перемещать использованные записи наверх"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "Обрезать пробелы"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "Удалять пробелы и переводы строк вокруг скопированного текста"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "Размер истории"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "Закреплённые записи не учитываются"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "Отклик"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "Анимации"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "Открытие окна, перемещение выделения и карточка предпросмотра"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "Анимировать значок на панели"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "Короткая пульсация при копировании"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "Звуковые эффекты"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "При открытии окна и выборе записи"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "Звук открытия"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "Звук выбора"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "Уведомление при копировании"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "Поиск"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "С учётом регистра"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "Регулярные выражения"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "Макет"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "Как выглядит окно буфера обмена"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "Подробности"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "Показывать время"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "Сколько времени назад была скопирована запись"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "Карточка предпросмотра"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "Крупный предпросмотр выбранной записи рядом с окном"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "Показывать карточку предпросмотра"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "Задержка для мыши"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "Миллисекунды"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "Задержка для стрелок"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "Приватный режим"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "Пока он включён, ничего не записывается"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "Добавить приложение"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "Исключённые приложения"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"То, что копируется в этих приложениях, никогда не записывается. Менеджеры "
+"паролей исключены по умолчанию."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "Удалить"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "Нет исключённых приложений"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "Хранение"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "Запоминать историю"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "Сохранять записи после выхода из системы или перезагрузки"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "Запоминать только закреплённые записи"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "Записывать изображения"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "Наибольшее изображение"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "Мегабайты"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "Автоматическая очистка"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "Закреплённые записи всегда сохраняются"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "Очищать после перезагрузки"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "Очистить историю"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "Спрашивать перед очисткой"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "Поиск приложений"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "Комбинации клавиш"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "Глобальные комбинации клавиш"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "Включить комбинации клавиш"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "Отключено"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "Внутри окна"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "Пробел"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "Открывать ссылки и файлы клавишей"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "Пробел увеличивает всё остальное"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "Перемещать выделение — карточка предпросмотра следует за ним"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "Скопировать (и вставить, если включено)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "Ввод текста"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "Мгновенный поиск"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "Применить предложенный фильтр"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "Закрепить / открепить"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "Изменить текст"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "Добавить метку"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "Удалить запись"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "Скопировать запись 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "Очистить поиск, затем закрыть"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "Нажмите комбинацию клавиш"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc — отмена · Backspace — отключить"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "О приложении"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "Версия %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "Сделано Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "Сайт и исходный код"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "Сообщить о проблеме"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "Бережёт батарею"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ никогда не опрашивает буфер постоянно. Он просыпается только при "
+"изменении буфера обмена, строит список только при открытии и записывает на "
+"диск не чаще раза в две секунды."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "Изменить запись"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "Метка записи"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "Короткая метка, которая показывается в списке и доступна для поиска."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "напр. Работа, Адрес, Токен"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "Сохранить"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "Изображения"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "Ссылки"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "Код"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "Цвета"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "Закреплённые"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "Файлы"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "Текст"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Нажмите Tab, чтобы отфильтровать: %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "Закреплённые"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "История"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "Пока ничего не скопировано"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "Ничего не найдено"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "Приватный режим включён — копии не записываются"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "Здесь появятся скопированные тексты и изображения"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "Попробуйте другой запрос или фильтр"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "Показать в папке"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "Открепить"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "Закрепить"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "Удалить"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "Очистить историю буфера обмена?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr ""
+"Будут удалены все записи, кроме закреплённых. Это действие нельзя отменить."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "Очистить"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "Не удалось открыть"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "Открыть"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "сейчас"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s назад"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "Закрыть"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "Увеличить"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "Изображение"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d элемент"
+msgstr[1] "%d элемента"
+msgstr[2] "%d элементов"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d символ"
+msgstr[1] "%d символа"
+msgstr[2] "%d символов"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d строка"
+msgstr[1] "%d строки"
+msgstr[2] "%d строк"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "Ссылка"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d мин"
+msgstr[1] "%d мин"
+msgstr[2] "%d мин"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d ч"
+msgstr[1] "%d ч"
+msgstr[2] "%d ч"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "вчера"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d день"
+msgstr[1] "%d дня"
+msgstr[2] "%d дней"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "Изображение — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s и ещё %d"

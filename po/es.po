@@ -1,0 +1,670 @@
+# Spanish translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "Copiado"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "Portapapeles"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "Predeterminado"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "Lista tranquila de una línea"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "Aplicación de origen y hora"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "Tarjetas"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "Vistas previas grandes"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "Compacto"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "Más elementos en menos espacio"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "Nunca"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "Cada 30 minutos"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "Cada hora"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "Cada 6 horas"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "Cada día"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "Cada semana"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "Abrir portapapeles"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "Copiar elemento anterior"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "Copiar elemento siguiente"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "Borrar historial"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "Activar/desactivar modo privado"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "Volumen"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "Reproducir"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "General"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "Comportamiento"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "Pegar al seleccionar"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "Pegar en la ventana activa tras elegir un elemento"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "Mover los elementos usados arriba"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "Recortar espacios"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "Quitar espacios y saltos de línea alrededor del texto copiado"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "Tamaño del historial"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "Los elementos fijados no cuentan"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "Respuesta"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "Animaciones"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr ""
+"Apertura de la ventana, movimiento de la selección y la tarjeta de vista "
+"previa"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "Animar el icono del panel"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "Un breve pulso cuando se copia algo"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "Efectos de sonido"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "Al abrir la ventana y al elegir un elemento"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "Sonido de apertura"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "Sonido de selección"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "Notificación al copiar"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "Búsqueda"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "Distinguir mayúsculas"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "Expresiones regulares"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "Disposición"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "Cómo se ve la ventana del portapapeles"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "Detalles"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "Mostrar hora"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "Hace cuánto se copió cada elemento"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "Tarjeta de vista previa"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "Una vista previa grande del elemento seleccionado junto a la ventana"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "Mostrar tarjeta de vista previa"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "Retraso con el ratón"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "Milisegundos"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "Retraso con las flechas"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "Privacidad"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "Modo privado"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "No se registra nada mientras está activado"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "Añadir aplicación"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "Aplicaciones excluidas"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"Lo que se copia en estas aplicaciones nunca se registra. Los gestores de "
+"contraseñas están excluidos por defecto."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "Quitar"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "No hay aplicaciones excluidas"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "Almacenamiento"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "Recordar historial"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "Conservar los elementos tras cerrar sesión o reiniciar"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "Recordar solo los elementos fijados"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "Registrar imágenes"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "Imagen más grande"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "Megabytes"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "Limpieza automática"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "Los elementos fijados siempre se conservan"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "Borrar tras reiniciar"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "Borrar historial"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "Preguntar antes de borrar"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "Buscar aplicaciones"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "Atajos"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "Atajos globales"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "Activar atajos"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "Dentro de la ventana"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "Espacio"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Intro"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "Abrir enlaces y archivos con"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "Espacio amplía todo lo demás"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "Mover la selección — la tarjeta de vista previa la sigue"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "Copiar (y pegar, si está activado)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "Escribir"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "Buscar al instante"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "Aplicar el filtro sugerido"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "Fijar / soltar"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "Editar texto"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "Añadir una etiqueta"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "Eliminar elemento"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "Copiar elemento 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "Borrar la búsqueda y luego cerrar"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "Pulse un atajo"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc para cancelar · Retroceso para desactivar"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "Acerca de"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "Versión %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "Hecho por Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "Sitio web y código fuente"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "Informar de un problema"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "Ahorra batería"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ nunca consulta de forma continua. Solo se activa cuando cambia el "
+"portapapeles, crea su lista solo cuando la abre y escribe en el disco como "
+"mucho una vez cada dos segundos."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "Editar elemento"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "Etiquetar elemento"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "Una etiqueta corta que se muestra en la lista y se puede buscar."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "p. ej. Trabajo, Dirección, Token"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "Guardar"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "Imágenes"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "Enlaces"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "Código"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "Colores"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "Fijados"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "Archivos"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "Texto"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "Configuración"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Pulse Tab para filtrar por %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "Fijados"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "Historial"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "Aún no se ha copiado nada"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "Sin resultados"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "El modo privado está activado — no se registran las copias"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "Los textos e imágenes copiados aparecerán aquí"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "Pruebe otra búsqueda u otro filtro"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "Mostrar en la carpeta"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "Soltar"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "Fijar"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "Eliminar"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "¿Borrar el historial del portapapeles?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr ""
+"Se eliminarán todos los elementos excepto los fijados. Esta acción no se "
+"puede deshacer."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "Borrar"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "No se pudo abrir"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "Abrir"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "ahora"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "hace %s"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "Cerrar"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "Ampliar"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "Imagen"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d elemento"
+msgstr[1] "%d elementos"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d carácter"
+msgstr[1] "%d caracteres"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d línea"
+msgstr[1] "%d líneas"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "Enlace"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d min"
+msgstr[1] "%d min"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d h"
+msgstr[1] "%d h"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "ayer"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d día"
+msgstr[1] "%d días"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "Imagen — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s y %d más"

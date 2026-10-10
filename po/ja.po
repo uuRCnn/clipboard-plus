@@ -1,0 +1,660 @@
+# Japanese translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "コピーしました"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "クリップボード"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "デフォルト"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "落ち着いた 1 行リスト"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "スポットライト"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "コピー元アプリと時刻"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "カード"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "大きなプレビュー"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "コンパクト"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "最小のスペースで最多の項目"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "しない"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "30 分ごと"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "1 時間ごと"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "6 時間ごと"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "毎日"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "毎週"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "クリップボードを開く"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "古い項目をコピー"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "新しい項目をコピー"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "履歴を消去"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "プライベートモードを切り替え"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "音量"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "再生"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "全般"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "動作"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "選択時に貼り付け"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "項目を選んだらアクティブなウィンドウに貼り付けます"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "使った項目を先頭に移動"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "空白を削除"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "コピーしたテキスト前後の空白と改行を取り除きます"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "履歴のサイズ"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "ピン留めした項目は数えません"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "フィードバック"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "アニメーション"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "ポップアップを開くとき、選択の移動、プレビューカード"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "パネルアイコンをアニメーション"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "コピーしたときに短く脈打ちます"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "効果音"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "ポップアップを開くときと項目を選ぶとき"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "開くときの音"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "選択時の音"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "コピー時に通知"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "検索"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "大文字と小文字を区別"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "正規表現"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "外観"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "レイアウト"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "クリップボードのポップアップの見た目"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "詳細"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "時刻を表示"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "各項目をどれくらい前にコピーしたか"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "プレビューカード"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "選択した項目の大きなプレビューをポップアップの横に表示します"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "プレビューカードを表示"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "マウスでの遅延"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "ミリ秒"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "矢印キーでの遅延"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "プライバシー"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "プライベートモード"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "オンの間は何も記録しません"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "アプリを追加"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "除外するアプリ"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"これらのアプリでコピーした内容は記録しません。パスワードマネージャーはデフォ"
+"ルトで除外されています。"
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "削除"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "除外するアプリはありません"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "保存"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "履歴を保存"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "ログアウトや再起動後も項目を残します"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "ピン留めした項目だけを保存"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "画像を記録"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "最大の画像サイズ"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "MB"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "自動消去"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "ピン留めした項目は常に残ります"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "再起動後に消去"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "履歴を消去"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "消去前に確認"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "アプリを検索"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "ショートカット"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "グローバルショートカット"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "ショートカットを有効化"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "無効"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "ポップアップ内"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "スペース"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "リンクとファイルを開くキー"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "その他はスペースで拡大"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "選択を移動 — プレビューカードが追従します"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "コピー (有効なら貼り付け)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "入力"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "すぐに検索"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "提案されたフィルターを適用"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "ピン留め / 解除"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "テキストを編集"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "タグを追加"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "項目を削除"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "項目 1–9 をコピー"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "検索を消去し、次に閉じる"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "ショートカットを押してください"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc でキャンセル · Backspace で無効化"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "このアプリについて"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "バージョン %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "制作: Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "ウェブサイトとソースコード"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "問題を報告"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "省電力"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ は常時チェックをしません。クリップボードが変わったときだけ動作し、"
+"開いたときにだけリストを作成し、ディスクへの書き込みは最大でも 2 秒に 1 回で"
+"す。"
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "項目を編集"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "項目にタグを付ける"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "リストに表示され、検索できる短いラベルです。"
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "例: 仕事、住所、トークン"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "保存"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "画像"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "リンク"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "コード"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "色"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "ピン留め"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "ファイル"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "テキスト"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "設定"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Tab で「%s」に絞り込み"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "ピン留め"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "履歴"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "まだ何もコピーしていません"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "結果がありません"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "プライベートモードがオンです — コピーは記録されません"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "コピーしたテキストや画像がここに表示されます"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "別の検索語やフィルターを試してください"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "フォルダーで表示"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "ピン留めを解除"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "ピン留め"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "削除"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "クリップボードの履歴を消去しますか?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "ピン留めした項目以外はすべて削除されます。元に戻すことはできません。"
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "消去"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "開けませんでした"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "開く"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "たった今"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s前"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "閉じる"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "拡大"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "画像"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d 個の項目"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d 文字"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d 行"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "リンク"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d 分"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d 時間"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "昨日"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d 日"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "画像 — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s ほか %d 件"

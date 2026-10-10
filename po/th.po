@@ -1,0 +1,657 @@
+# Thai translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Thai\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "คัดลอกแล้ว"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "คลิปบอร์ด"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "ค่าเริ่มต้น"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "รายการบรรทัดเดียวแบบเรียบ"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "สปอตไลต์"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "แอปต้นทางและเวลา"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "การ์ด"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "ภาพตัวอย่างขนาดใหญ่"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "กะทัดรัด"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "รายการมากที่สุดในพื้นที่น้อยที่สุด"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "ไม่เลย"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "ทุก 30 นาที"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "ทุกชั่วโมง"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "ทุก 6 ชั่วโมง"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "ทุกวัน"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "ทุกสัปดาห์"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "เปิดคลิปบอร์ด"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "คัดลอกรายการที่เก่ากว่า"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "คัดลอกรายการที่ใหม่กว่า"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "ล้างประวัติ"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "เปิด/ปิดโหมดส่วนตัว"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "ระดับเสียง"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "เล่น"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "ทั่วไป"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "พฤติกรรม"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "วางเมื่อเลือก"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "วางลงในหน้าต่างที่ใช้งานอยู่หลังจากเลือกรายการ"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "ย้ายรายการที่ใช้ไปไว้บนสุด"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "ตัดช่องว่าง"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "ลบช่องว่างและการขึ้นบรรทัดรอบข้อความที่คัดลอก"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "ขนาดประวัติ"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "ไม่นับรายการที่ปักหมุด"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "การตอบสนอง"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "ภาพเคลื่อนไหว"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "การเปิดหน้าต่าง การเลื่อนการเลือก และการ์ดแสดงตัวอย่าง"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "ทำให้ไอคอนบนแผงเคลื่อนไหว"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "กะพริบสั้น ๆ เมื่อมีการคัดลอก"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "เสียงประกอบ"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "เมื่อเปิดหน้าต่างและเมื่อเลือกรายการ"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "เสียงเปิด"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "เสียงเลือก"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "แจ้งเตือนเมื่อคัดลอก"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "ค้นหา"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "ตรงตามตัวพิมพ์"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "นิพจน์ปกติ"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "ลักษณะ"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "เค้าโครง"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "หน้าตาของหน้าต่างคลิปบอร์ด"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "รายละเอียด"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "แสดงเวลา"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "แต่ละรายการถูกคัดลอกไปนานเท่าใดแล้ว"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "การ์ดแสดงตัวอย่าง"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "ตัวอย่างขนาดใหญ่ของรายการที่เลือกข้างหน้าต่าง"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "แสดงการ์ดแสดงตัวอย่าง"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "หน่วงเวลาเมื่อใช้เมาส์"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "มิลลิวินาที"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "หน่วงเวลาเมื่อใช้ปุ่มลูกศร"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "ความเป็นส่วนตัว"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "โหมดส่วนตัว"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "ไม่บันทึกสิ่งใดขณะเปิดอยู่"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "เพิ่มแอป"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "แอปที่ยกเว้น"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr "สิ่งที่คัดลอกในแอปเหล่านี้จะไม่ถูกบันทึกเลย ตัวจัดการรหัสผ่านถูกยกเว้นโดยค่าเริ่มต้น"
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "เอาออก"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "ไม่มีแอปที่ยกเว้น"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "พื้นที่จัดเก็บ"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "จำประวัติ"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "เก็บรายการไว้หลังออกจากระบบหรือเริ่มใหม่"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "จำเฉพาะรายการที่ปักหมุด"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "บันทึกรูปภาพ"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "รูปภาพที่ใหญ่ที่สุด"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "เมกะไบต์"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "ล้างอัตโนมัติ"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "รายการที่ปักหมุดจะถูกเก็บไว้เสมอ"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "ล้างหลังเริ่มใหม่"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "ล้างประวัติ"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "ถามก่อนล้าง"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "ค้นหาแอป"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "ทางลัด"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "ทางลัดส่วนกลาง"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "เปิดใช้ทางลัด"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "ปิดใช้"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "ภายในหน้าต่าง"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "เว้นวรรค"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "เปิดลิงก์และไฟล์ด้วย"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "เว้นวรรคขยายทุกอย่างที่เหลือ"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "เลื่อนการเลือก — การ์ดแสดงตัวอย่างจะตามไป"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "คัดลอก (และวาง ถ้าเปิดใช้)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "พิมพ์"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "ค้นหาทันที"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "ใช้ตัวกรองที่แนะนำ"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "ปักหมุด / เลิกปักหมุด"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "แก้ไขข้อความ"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "เพิ่มแท็ก"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "ลบรายการ"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "คัดลอกรายการ 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "ล้างการค้นหา แล้วปิด"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "กดทางลัด"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc เพื่อยกเลิก · Backspace เพื่อปิดใช้"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "เกี่ยวกับ"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "รุ่น %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "สร้างโดย Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "เว็บไซต์และซอร์สโค้ด"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "รายงานปัญหา"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "ประหยัดแบตเตอรี่"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ ไม่ตรวจสอบตลอดเวลา จะทำงานเฉพาะเมื่อคลิปบอร์ดเปลี่ยน "
+"สร้างรายการเฉพาะเมื่อคุณเปิด และเขียนลงดิสก์อย่างมากทุกสองวินาที"
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "แก้ไขรายการ"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "ติดแท็กรายการ"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "ป้ายกำกับสั้น ๆ ที่แสดงในรายการและค้นหาได้"
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "เช่น งาน ที่อยู่ โทเค็น"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "บันทึก"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "รูปภาพ"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "ลิงก์"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "โค้ด"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "สี"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "ปักหมุด"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "ไฟล์"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "ข้อความ"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "การตั้งค่า"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "กด Tab เพื่อกรองตาม %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "ปักหมุด"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "ประวัติ"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "ยังไม่มีการคัดลอก"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "ไม่มีผลลัพธ์"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "โหมดส่วนตัวเปิดอยู่ — ไม่บันทึกสิ่งที่คัดลอก"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "ข้อความและรูปภาพที่คัดลอกจะแสดงที่นี่"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "ลองค้นหาหรือใช้ตัวกรองอื่น"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "แสดงในโฟลเดอร์"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "เลิกปักหมุด"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "ปักหมุด"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "ลบ"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "ล้างประวัติคลิปบอร์ดหรือไม่?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "รายการทั้งหมดยกเว้นที่ปักหมุดจะถูกลบ ไม่สามารถย้อนกลับได้"
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "ล้าง"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "เปิดไม่ได้"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "เปิด"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "เมื่อสักครู่"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s ที่แล้ว"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "ปิด"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "ขยาย"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "รูปภาพ"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d รายการ"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d ตัวอักษร"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d บรรทัด"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "ลิงก์"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d นาที"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d ชม."
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "เมื่อวาน"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d วัน"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "รูปภาพ — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s และอีก %d รายการ"

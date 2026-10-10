@@ -1,7 +1,7 @@
 {
   "uuid": "clipboard-plus@dukha",
   "name": "Clipboard+",
-  "description": "Clipboard+ is a minimal, beautiful clipboard manager with clipboard history for GNOME. Copy and paste text, images, screenshots, links, colors, code and files again later.\n\n* Instant search with smart filters\n* Large preview card: Space enlarges it or opens links\n* Pin, edit and tag entries\n* Show screenshots and copied files in their folder\n* Private mode and excluded apps (password managers)\n* Four layouts, light and dark styles, system accent color\n* Subtle sounds and animations, both optional\n\nOpen it with Alt+C (configurable) or from the top bar.\n\nClipboard access: this extension reads the clipboard to keep a history. The history stays on your computer and is never sent anywhere.\n\nEvent-driven (no polling) for near-zero battery usage. Made by Dukha.",
+  "description": "Clipboard+ is a minimal, beautiful clipboard manager with clipboard history for GNOME. Copy and paste text, images, screenshots, links, colors, code and files again later.\n\n* Instant search with smart filters\n* Large preview card: Space enlarges it or opens links\n* Pin, edit and tag entries\n* Show screenshots and copied files in their folder\n* Private mode and excluded apps (password managers)\n* Four layouts, light and dark styles, system accent color\n* Subtle sounds and animations, both optional\n* Available in 18 languages\n\nOpen it with Alt+C (configurable) or from the top bar.\n\nClipboard access: this extension reads the clipboard to keep a history. The history stays on your computer and is never sent anywhere.\n\nEvent-driven (no polling) for near-zero battery usage. Made by Dukha.",
   "shell-version": [
     "46",
     "47",
@@ -13,5 +13,5 @@
   "url": "https://github.com/uuRCnn/clipboard-plus",
   "settings-schema": "org.gnome.shell.extensions.clipboard-plus",
   "gettext-domain": "clipboard-plus",
-  "version-name": "1.1"
+  "version-name": "1.2"
 }

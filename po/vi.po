@@ -1,0 +1,660 @@
+# Vietnamese translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "Đã sao chép"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "Bảng tạm"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "Mặc định"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "Danh sách một dòng nhẹ nhàng"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "Ứng dụng nguồn và thời gian"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "Thẻ"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "Xem trước hình ảnh lớn"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "Gọn"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "Nhiều mục nhất, ít chỗ nhất"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "Không bao giờ"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "Mỗi 30 phút"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "Mỗi giờ"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "Mỗi 6 giờ"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "Mỗi ngày"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "Mỗi tuần"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "Mở bảng tạm"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "Sao chép mục cũ hơn"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "Sao chép mục mới hơn"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "Xóa lịch sử"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "Bật/tắt chế độ riêng tư"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "Âm lượng"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "Phát"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "Chung"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "Hành vi"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "Dán khi chọn"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "Dán vào cửa sổ đang dùng sau khi chọn một mục"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "Đưa mục đã dùng lên đầu"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "Cắt khoảng trắng"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "Bỏ khoảng trắng và ngắt dòng quanh văn bản đã sao chép"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "Kích thước lịch sử"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "Mục đã ghim không được tính"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "Phản hồi"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "Hiệu ứng động"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "Mở cửa sổ, di chuyển lựa chọn và thẻ xem trước"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "Hiệu ứng cho biểu tượng trên thanh"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "Nhấp nháy ngắn khi có gì đó được sao chép"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "Hiệu ứng âm thanh"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "Khi mở cửa sổ và khi chọn một mục"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "Âm thanh mở"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "Âm thanh chọn"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "Thông báo khi sao chép"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "Phân biệt hoa thường"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "Biểu thức chính quy"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "Giao diện"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "Bố cục"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "Cửa sổ bảng tạm trông như thế nào"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "Chi tiết"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "Hiện thời gian"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "Mỗi mục được sao chép cách đây bao lâu"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "Thẻ xem trước"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "Bản xem trước lớn của mục đã chọn bên cạnh cửa sổ"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "Hiện thẻ xem trước"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "Độ trễ khi dùng chuột"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "Mili giây"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "Độ trễ khi dùng phím mũi tên"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "Riêng tư"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "Chế độ riêng tư"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "Không ghi lại gì khi chế độ này bật"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "Thêm ứng dụng"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "Ứng dụng bị loại trừ"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"Nội dung sao chép trong các ứng dụng này không bao giờ được ghi lại. Trình "
+"quản lý mật khẩu được loại trừ theo mặc định."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "Gỡ bỏ"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "Không có ứng dụng bị loại trừ"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "Lưu trữ"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "Nhớ lịch sử"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "Giữ các mục sau khi đăng xuất hoặc khởi động lại"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "Chỉ nhớ các mục đã ghim"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "Ghi lại hình ảnh"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "Hình ảnh lớn nhất"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "Megabyte"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "Tự động dọn dẹp"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "Mục đã ghim luôn được giữ lại"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "Xóa sau khi khởi động lại"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "Xóa lịch sử"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "Hỏi trước khi xóa"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "Tìm ứng dụng"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "Phím tắt"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "Phím tắt toàn cục"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "Bật phím tắt"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "Đã tắt"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "Trong cửa sổ"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "Dấu cách"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "Mở liên kết và tệp bằng"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "Dấu cách phóng to mọi thứ khác"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "Di chuyển lựa chọn — thẻ xem trước đi theo"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "Sao chép (và dán, nếu bật)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "Gõ"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "Tìm ngay lập tức"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "Áp dụng bộ lọc được gợi ý"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "Ghim / bỏ ghim"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "Sửa văn bản"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "Thêm thẻ"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "Xóa mục"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "Sao chép mục 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "Xóa tìm kiếm, rồi đóng"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "Nhấn một phím tắt"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc để hủy · Backspace để tắt"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "Giới thiệu"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "Phiên bản %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "Tạo bởi Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "Trang web và mã nguồn"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "Báo cáo sự cố"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "Tiết kiệm pin"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ không bao giờ kiểm tra liên tục. Nó chỉ hoạt động khi bảng tạm "
+"thay đổi, chỉ tạo danh sách khi bạn mở và ghi vào ổ đĩa nhiều nhất hai giây "
+"một lần."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "Sửa mục"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "Gắn thẻ cho mục"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "Một nhãn ngắn được hiện trong danh sách và có thể tìm kiếm."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "vd. Công việc, Địa chỉ, Token"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "Hủy"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "Lưu"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "Hình ảnh"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "Liên kết"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "Mã"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "Màu"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "Đã ghim"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "Tệp"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "Văn bản"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Nhấn Tab để lọc theo %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "Đã ghim"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "Lịch sử"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "Chưa sao chép gì"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "Không có kết quả"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "Chế độ riêng tư đang bật — nội dung sao chép không được ghi lại"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "Văn bản và hình ảnh đã sao chép sẽ hiện ở đây"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "Thử tìm kiếm hoặc bộ lọc khác"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "Hiện trong thư mục"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "Bỏ ghim"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "Ghim"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "Xóa"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "Xóa lịch sử bảng tạm?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "Tất cả các mục trừ mục đã ghim sẽ bị xóa. Không thể hoàn tác."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "Xóa"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "Không thể mở"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "Mở"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "vừa xong"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s trước"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "Đóng"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "Phóng to"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "Hình ảnh"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d mục"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d ký tự"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d dòng"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "Liên kết"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d phút"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d giờ"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "hôm qua"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d ngày"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "Hình ảnh — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s và %d mục khác"

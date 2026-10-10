@@ -1,0 +1,666 @@
+# Persian translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Persian\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "کپی شد"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "کلیپ‌بورد"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "پیش‌فرض"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "فهرست آرام تک‌خطی"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "برنامهٔ مبدأ و زمان"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "کارت‌ها"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "پیش‌نمایش‌های بزرگ"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "فشرده"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "بیشترین مورد در کمترین فضا"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "هرگز"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "هر ۳۰ دقیقه"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "هر ساعت"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "هر ۶ ساعت"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "هر روز"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "هر هفته"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "باز کردن کلیپ‌بورد"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "کپی مورد قدیمی‌تر"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "کپی مورد جدیدتر"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "پاک کردن تاریخچه"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "روشن/خاموش کردن حالت خصوصی"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "بلندی صدا"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "پخش"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "عمومی"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "رفتار"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "چسباندن هنگام انتخاب"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "پس از انتخاب مورد، در پنجرهٔ فعال بچسبان"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "انتقال موارد استفاده‌شده به بالا"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "حذف فاصله‌ها"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "فاصله‌ها و شکست خط‌های اطراف متن کپی‌شده را حذف کن"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "اندازهٔ تاریخچه"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "موارد سنجاق‌شده شمرده نمی‌شوند"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "بازخورد"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "پویانمایی‌ها"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "باز شدن پنجره، جابه‌جایی انتخاب و کارت پیش‌نمایش"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "پویانمایی نماد پنل"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "تپش کوتاه هنگام کپی چیزی"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "جلوه‌های صوتی"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "هنگام باز کردن پنجره و انتخاب مورد"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "صدای باز شدن"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "صدای انتخاب"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "اعلان هنگام کپی"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "جستجو"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "حساس به بزرگی و کوچکی حروف"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "عبارات باقاعده"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "چیدمان"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "ظاهر پنجرهٔ کلیپ‌بورد"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "جزئیات"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "نمایش زمان"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "هر مورد چه مدت پیش کپی شده است"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "کارت پیش‌نمایش"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "پیش‌نمایش بزرگ مورد انتخاب‌شده کنار پنجره"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "نمایش کارت پیش‌نمایش"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "تأخیر با ماوس"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "میلی‌ثانیه"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "تأخیر با کلیدهای جهت‌نما"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "حریم خصوصی"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "حالت خصوصی"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "تا وقتی روشن است، چیزی ثبت نمی‌شود"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "افزودن برنامه"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "برنامه‌های مستثنا"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"آنچه در این برنامه‌ها کپی شود هرگز ثبت نمی‌شود. مدیرهای گذرواژه به‌طور پیش‌فرض "
+"مستثنا هستند."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "برداشتن"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "هیچ برنامهٔ مستثنایی نیست"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "ذخیره‌سازی"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "به خاطر سپردن تاریخچه"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "نگه داشتن موارد پس از خروج یا راه‌اندازی دوباره"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "فقط موارد سنجاق‌شده را به خاطر بسپار"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "ثبت تصاویر"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "بزرگ‌ترین تصویر"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "مگابایت"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "پاک‌سازی خودکار"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "موارد سنجاق‌شده همیشه نگه داشته می‌شوند"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "پاک کردن پس از راه‌اندازی دوباره"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "پاک کردن تاریخچه"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "پیش از پاک کردن بپرس"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "جستجوی برنامه‌ها"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "میان‌برها"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "میان‌برهای سراسری"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "فعال کردن میان‌برها"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "غیرفعال"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "درون پنجره"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "فاصله"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "کلید باز کردن پیوندها و پرونده‌ها"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "فاصله بقیه را بزرگ می‌کند"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "جابه‌جایی انتخاب — کارت پیش‌نمایش دنبال می‌کند"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "کپی (و چسباندن، اگر فعال باشد)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "تایپ"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "جستجوی فوری"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "اعمال پالایهٔ پیشنهادی"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "سنجاق / برداشتن سنجاق"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "ویرایش متن"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "افزودن برچسب"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "حذف مورد"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "کپی مورد ۱ تا ۹"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "پاک کردن جستجو، سپس بستن"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "یک میان‌بر را فشار دهید"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc برای لغو · Backspace برای غیرفعال کردن"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "درباره"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "نگارش %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "ساخته‌شده توسط Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "وب‌سایت و کد منبع"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "گزارش مشکل"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "کم‌مصرف"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ هرگز پیوسته بررسی نمی‌کند. فقط وقتی کلیپ‌بورد تغییر کند بیدار "
+"می‌شود، فهرست را فقط هنگام باز کردن می‌سازد و حداکثر هر دو ثانیه یک بار روی "
+"دیسک می‌نویسد."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "ویرایش مورد"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "برچسب زدن مورد"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "برچسبی کوتاه که در فهرست نمایش داده می‌شود و قابل جستجوست."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "مثلاً کار، نشانی، توکن"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "لغو"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "ذخیره"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "تصاویر"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "پیوندها"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "کد"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "رنگ‌ها"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "سنجاق‌شده"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "پرونده‌ها"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "متن"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "برای پالایش بر اساس %s، Tab را بزنید"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "سنجاق‌شده"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "تاریخچه"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "هنوز چیزی کپی نشده"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "نتیجه‌ای نیست"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "حالت خصوصی روشن است — کپی‌ها ثبت نمی‌شوند"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "متن‌ها و تصاویر کپی‌شده اینجا نمایش داده می‌شوند"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "جستجو یا پالایهٔ دیگری را امتحان کنید"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "نمایش در پوشه"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "برداشتن سنجاق"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "سنجاق کردن"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "حذف"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "تاریخچهٔ کلیپ‌بورد پاک شود؟"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "همهٔ موارد به‌جز موارد سنجاق‌شده حذف می‌شوند. این کار برگشت‌پذیر نیست."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "پاک کردن"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "باز نشد"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "باز کردن"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "اکنون"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s پیش"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "بستن"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "بزرگ‌نمایی"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "تصویر"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d مورد"
+msgstr[1] "%d مورد"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d نویسه"
+msgstr[1] "%d نویسه"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d خط"
+msgstr[1] "%d خط"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "پیوند"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d دقیقه"
+msgstr[1] "%d دقیقه"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d ساعت"
+msgstr[1] "%d ساعت"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "دیروز"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d روز"
+msgstr[1] "%d روز"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "تصویر — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s و %d مورد دیگر"

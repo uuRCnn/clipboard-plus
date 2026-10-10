@@ -1,0 +1,659 @@
+# Korean translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "복사됨"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "클립보드"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "기본"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "차분한 한 줄 목록"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "스포트라이트"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "원본 앱과 시간"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "카드"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "큰 시각적 미리 보기"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "간결"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "가장 적은 공간에 가장 많은 항목"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "안 함"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "30분마다"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "1시간마다"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "6시간마다"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "매일"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "매주"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "클립보드 열기"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "이전 항목 복사"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "다음 항목 복사"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "기록 지우기"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "개인 모드 전환"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "음량"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "재생"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "일반"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "동작"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "선택 시 붙여넣기"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "항목을 고르면 활성 창에 붙여넣습니다"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "사용한 항목을 맨 위로 이동"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "공백 제거"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "복사한 텍스트 앞뒤의 공백과 줄바꿈을 제거합니다"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "기록 크기"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "고정한 항목은 포함되지 않습니다"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "피드백"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "애니메이션"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "팝업 열기, 선택 이동, 미리 보기 카드"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "패널 아이콘 애니메이션"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "무언가를 복사하면 짧게 깜박입니다"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "효과음"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "팝업을 열 때와 항목을 고를 때"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "열기 소리"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "선택 소리"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "복사 시 알림"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "검색"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "대소문자 구분"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "정규 표현식"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "모양"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "레이아웃"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "클립보드 팝업의 모양"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "세부 정보"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "시간 표시"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "각 항목을 얼마 전에 복사했는지"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "미리 보기 카드"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "팝업 옆에 선택한 항목의 큰 미리 보기"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "미리 보기 카드 표시"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "마우스 지연"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "밀리초"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "화살표 키 지연"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "개인 정보"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "개인 모드"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "켜져 있는 동안에는 아무것도 기록하지 않습니다"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "앱 추가"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "제외된 앱"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"이 앱들에서 복사한 내용은 절대 기록되지 않습니다. 비밀번호 관리자는 기본으로 "
+"제외됩니다."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "제거"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "제외된 앱이 없습니다"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "저장소"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "기록 기억"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "로그아웃하거나 다시 시작해도 항목 유지"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "고정한 항목만 기억"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "이미지 기록"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "최대 이미지 크기"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "MB"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "자동 정리"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "고정한 항목은 항상 유지됩니다"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "다시 시작하면 지우기"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "기록 지우기"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "지우기 전에 확인"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "앱 검색"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "단축키"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "전역 단축키"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "단축키 사용"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "사용 안 함"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "팝업 안에서"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "스페이스"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "링크와 파일을 여는 키"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "나머지는 스페이스로 확대합니다"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "선택 이동 — 미리 보기 카드가 따라옵니다"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "복사 (켜져 있으면 붙여넣기)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "입력"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "즉시 검색"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "제안된 필터 적용"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "고정 / 고정 해제"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "텍스트 편집"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "태그 추가"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "항목 삭제"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "1–9번 항목 복사"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "검색 지우고 닫기"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "단축키를 누르세요"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc로 취소 · Backspace로 사용 안 함"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "정보"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "버전 %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "Dukha 제작"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "웹사이트와 소스 코드"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "문제 신고"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "배터리 절약"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+는 계속 확인하지 않습니다. 클립보드가 바뀔 때만 깨어나고, 열 때만 "
+"목록을 만들며, 디스크에는 최대 2초에 한 번만 씁니다."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "항목 편집"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "항목에 태그 달기"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "목록에 표시되고 검색할 수 있는 짧은 이름입니다."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "예: 업무, 주소, 토큰"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "취소"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "저장"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "이미지"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "링크"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "코드"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "색상"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "고정됨"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "파일"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "텍스트"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "설정"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Tab을 눌러 %s(으)로 필터링"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "고정됨"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "기록"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "아직 복사한 내용이 없습니다"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "결과 없음"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "개인 모드가 켜져 있습니다 — 복사한 내용이 기록되지 않습니다"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "복사한 텍스트와 이미지가 여기에 나타납니다"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "다른 검색어나 필터를 사용해 보세요"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "폴더에서 보기"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "고정 해제"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "고정"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "삭제"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "클립보드 기록을 지울까요?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "고정한 항목을 제외한 모든 항목이 삭제됩니다. 되돌릴 수 없습니다."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "지우기"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "열 수 없습니다"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "열기"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "방금"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s 전"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "닫기"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "확대"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "이미지"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d개 항목"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d자"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d줄"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "링크"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d분"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d시간"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "어제"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d일"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "이미지 — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s 외 %d개"

@@ -1,0 +1,661 @@
+# Indonesian translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "Disalin"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "Papan klip"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "Bawaan"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "Daftar satu baris yang tenang"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "Aplikasi sumber dan waktu"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "Kartu"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "Pratinjau visual besar"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "Ringkas"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "Entri terbanyak, ruang tersedikit"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "Tidak pernah"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "Setiap 30 menit"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "Setiap jam"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "Setiap 6 jam"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "Setiap hari"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "Setiap minggu"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "Buka papan klip"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "Salin entri yang lebih lama"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "Salin entri yang lebih baru"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "Hapus riwayat"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "Alihkan mode privat"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "Volume"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "Putar"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "Umum"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "Perilaku"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "Tempel saat memilih"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "Tempel ke jendela aktif setelah memilih entri"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "Pindahkan entri yang dipakai ke atas"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "Pangkas spasi"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "Hapus spasi dan baris baru di sekitar teks yang disalin"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "Ukuran riwayat"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "Entri yang disematkan tidak dihitung"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "Umpan balik"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "Animasi"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "Membuka jendela, memindahkan pilihan, dan kartu pratinjau"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "Animasikan ikon panel"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "Denyut singkat saat sesuatu disalin"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "Efek suara"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "Saat membuka jendela dan memilih entri"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "Suara membuka"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "Suara memilih"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "Notifikasi saat menyalin"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "Cari"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "Peka huruf besar/kecil"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "Ekspresi reguler"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "Tampilan"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "Tata letak"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "Tampilan jendela papan klip"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "Detail"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "Tampilkan waktu"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "Berapa lama lalu setiap entri disalin"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "Kartu pratinjau"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "Pratinjau besar entri yang dipilih di samping jendela"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "Tampilkan kartu pratinjau"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "Jeda dengan mouse"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "Milidetik"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "Jeda dengan tombol panah"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "Privasi"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "Mode privat"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "Tidak ada yang direkam selama ini aktif"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "Tambah aplikasi"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "Aplikasi yang dikecualikan"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"Salinan di aplikasi ini tidak pernah direkam. Pengelola kata sandi "
+"dikecualikan secara bawaan."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "Hapus"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "Tidak ada aplikasi yang dikecualikan"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "Penyimpanan"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "Ingat riwayat"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "Simpan entri setelah keluar atau memulai ulang"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "Hanya ingat entri yang disematkan"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "Rekam gambar"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "Gambar terbesar"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "Megabita"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "Pembersihan otomatis"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "Entri yang disematkan selalu disimpan"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "Hapus setelah memulai ulang"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "Hapus riwayat"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "Tanya sebelum menghapus"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "Cari aplikasi"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "Pintasan"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "Pintasan global"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "Aktifkan pintasan"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "Nonaktif"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "Di dalam jendela"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "Spasi"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "Buka tautan dan berkas dengan"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "Spasi memperbesar yang lainnya"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "Pindahkan pilihan — kartu pratinjau mengikuti"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "Salin (dan tempel, jika aktif)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "Ketik"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "Cari seketika"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "Terapkan filter yang disarankan"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "Sematkan / lepas"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "Sunting teks"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "Tambah tag"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "Hapus entri"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "Salin entri 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "Kosongkan pencarian, lalu tutup"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "Tekan pintasan"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc untuk batal · Backspace untuk menonaktifkan"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "Tentang"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "Versi %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "Dibuat oleh Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "Situs web dan kode sumber"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "Laporkan masalah"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "Hemat baterai"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"Clipboard+ tidak pernah memeriksa terus-menerus. Ia hanya aktif saat papan "
+"klip berubah, membuat daftar hanya saat Anda membukanya, dan menulis ke disk "
+"paling sering sekali setiap dua detik."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "Sunting entri"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "Beri tag entri"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "Label singkat yang ditampilkan di daftar dan dapat dicari."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "mis. Kerja, Alamat, Token"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "Simpan"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "Gambar"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "Tautan"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "Kode"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "Warna"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "Disematkan"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "Berkas"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "Teks"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "Tekan Tab untuk memfilter menurut %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "Disematkan"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "Riwayat"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "Belum ada yang disalin"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "Tidak ada hasil"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "Mode privat aktif — salinan tidak direkam"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "Teks dan gambar yang disalin akan muncul di sini"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "Coba pencarian atau filter lain"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "Tampilkan di folder"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "Lepas sematan"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "Sematkan"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "Hapus"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "Hapus riwayat papan klip?"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr ""
+"Semua entri kecuali yang disematkan akan dihapus. Ini tidak dapat dibatalkan."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "Hapus"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "Tidak dapat dibuka"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "Buka"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "baru saja"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "%s lalu"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "Tutup"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "Perbesar"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "Gambar"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d item"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d karakter"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d baris"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "Tautan"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d mnt"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d jam"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "kemarin"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d hari"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "Gambar — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s dan %d lainnya"

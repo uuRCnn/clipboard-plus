@@ -1,0 +1,689 @@
+# Arabic translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#: src/extension.js:38
+msgid "Copied"
+msgstr "تم النسخ"
+
+#: src/extension.js:121
+msgid "Clipboard"
+msgstr "الحافظة"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "افتراضي"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "قائمة هادئة بسطر واحد"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "التطبيق المصدر والوقت"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "بطاقات"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "معاينات مرئية كبيرة"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "مضغوط"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "أكبر عدد من العناصر في أقل مساحة"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "أبدًا"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "كل 30 دقيقة"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "كل ساعة"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "كل 6 ساعات"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "كل يوم"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "كل أسبوع"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "افتح الحافظة"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "انسخ العنصر الأقدم"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "انسخ العنصر الأحدث"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "امسح السجل"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "بدّل الوضع الخاص"
+
+#: src/prefs.js:68
+msgid "Volume"
+msgstr "مستوى الصوت"
+
+#: src/prefs.js:82
+msgid "Play"
+msgstr "تشغيل"
+
+#: src/prefs.js:100
+msgid "General"
+msgstr "عام"
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr "السلوك"
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr "الصق عند الاختيار"
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr "الصق في النافذة النشطة بعد اختيار عنصر"
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr "انقل العناصر المستخدمة إلى الأعلى"
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr "قصّ المسافات"
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr "أزل المسافات وفواصل الأسطر حول النص المنسوخ"
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr "حجم السجل"
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr "العناصر المثبتة لا تُحتسب"
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr "التفاعل"
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr "الحركات"
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr "فتح النافذة وتحريك التحديد وبطاقة المعاينة"
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr "حرّك أيقونة اللوحة"
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr "نبضة قصيرة عند نسخ شيء ما"
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr "المؤثرات الصوتية"
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr "عند فتح النافذة واختيار عنصر"
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr "صوت الفتح"
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr "صوت الاختيار"
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr "إشعار عند النسخ"
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr "البحث"
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr "مطابقة حالة الأحرف"
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr "التعابير النمطية"
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr "المظهر"
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr "التخطيط"
+
+#: src/prefs.js:144
+msgid "How the clipboard popup looks"
+msgstr "شكل نافذة الحافظة"
+
+#: src/prefs.js:195
+msgid "Details"
+msgstr "التفاصيل"
+
+#: src/prefs.js:196
+msgid "Show Time"
+msgstr "أظهر الوقت"
+
+#: src/prefs.js:197
+msgid "How long ago each entry was copied"
+msgstr "منذ متى نُسخ كل عنصر"
+
+#: src/prefs.js:201
+msgid "Preview Card"
+msgstr "بطاقة المعاينة"
+
+#: src/prefs.js:202
+msgid "A large preview of the selected entry next to the popup"
+msgstr "معاينة كبيرة للعنصر المحدد بجانب النافذة"
+
+#: src/prefs.js:204
+msgid "Show Preview Card"
+msgstr "أظهر بطاقة المعاينة"
+
+#: src/prefs.js:205
+msgid "Delay with Mouse"
+msgstr "التأخير مع الفأرة"
+
+#: src/prefs.js:205 src/prefs.js:206
+msgid "Milliseconds"
+msgstr "ميلي ثانية"
+
+#: src/prefs.js:206
+msgid "Delay with Arrow Keys"
+msgstr "التأخير مع مفاتيح الأسهم"
+
+#: src/prefs.js:216 src/prefs.js:218
+msgid "Privacy"
+msgstr "الخصوصية"
+
+#: src/prefs.js:219 src/lib/popup.js:197
+msgid "Private Mode"
+msgstr "الوضع الخاص"
+
+#: src/prefs.js:220
+msgid "Nothing is recorded while this is on"
+msgstr "لا يُسجَّل أي شيء أثناء تفعيله"
+
+#: src/prefs.js:227 src/prefs.js:314
+msgid "Add Application"
+msgstr "أضف تطبيقًا"
+
+#: src/prefs.js:231
+msgid "Excluded Applications"
+msgstr "التطبيقات المستثناة"
+
+#: src/prefs.js:232
+msgid ""
+"Copies made in these apps are never recorded. Password managers are excluded "
+"by default."
+msgstr ""
+"ما يُنسخ في هذه التطبيقات لا يُسجَّل أبدًا. مدراء كلمات المرور مستثناة افتراضيًا."
+
+#: src/prefs.js:251
+msgid "Remove"
+msgstr "أزل"
+
+#: src/prefs.js:260
+msgid "No excluded applications"
+msgstr "لا توجد تطبيقات مستثناة"
+
+#: src/prefs.js:274
+msgid "Storage"
+msgstr "التخزين"
+
+#: src/prefs.js:275
+msgid "Remember History"
+msgstr "تذكّر السجل"
+
+#: src/prefs.js:276
+msgid "Keep entries after logging out or restarting"
+msgstr "احتفظ بالعناصر بعد تسجيل الخروج أو إعادة التشغيل"
+
+#: src/prefs.js:277
+msgid "Remember Only Pinned Entries"
+msgstr "تذكّر العناصر المثبتة فقط"
+
+#: src/prefs.js:280
+msgid "Record Images"
+msgstr "سجّل الصور"
+
+#: src/prefs.js:281
+msgid "Largest Image"
+msgstr "أكبر صورة"
+
+#: src/prefs.js:281
+msgid "Megabytes"
+msgstr "ميغابايت"
+
+#: src/prefs.js:286
+msgid "Automatic Cleanup"
+msgstr "التنظيف التلقائي"
+
+#: src/prefs.js:286
+msgid "Pinned entries are always kept"
+msgstr "العناصر المثبتة تُحفظ دائمًا"
+
+#: src/prefs.js:287
+msgid "Clear After Restart"
+msgstr "امسح بعد إعادة التشغيل"
+
+#: src/prefs.js:291 src/lib/popup.js:212
+msgid "Clear History"
+msgstr "امسح السجل"
+
+#: src/prefs.js:308
+msgid "Ask Before Clearing"
+msgstr "اسأل قبل المسح"
+
+#: src/prefs.js:318
+msgid "Search applications"
+msgstr "ابحث عن التطبيقات"
+
+#: src/prefs.js:347
+msgid "Shortcuts"
+msgstr "الاختصارات"
+
+#: src/prefs.js:349
+msgid "Global Shortcuts"
+msgstr "الاختصارات العامة"
+
+#: src/prefs.js:350
+msgid "Enable Shortcuts"
+msgstr "فعّل الاختصارات"
+
+#: src/prefs.js:357
+msgid "Disabled"
+msgstr "معطّل"
+
+#: src/prefs.js:376
+msgid "Inside the Popup"
+msgstr "داخل النافذة"
+
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr "مسافة"
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr "Ctrl+Enter"
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr "افتح الروابط والملفات باستخدام"
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr "المسافة تكبّر كل ما عدا ذلك"
+
+#: src/prefs.js:401
+msgid "Move selection — the preview card follows"
+msgstr "حرّك التحديد — بطاقة المعاينة تتبعه"
+
+#: src/prefs.js:402
+msgid "Copy (and paste, if enabled)"
+msgstr "انسخ (والصق إذا كان مفعّلًا)"
+
+#: src/prefs.js:403
+msgid "Type"
+msgstr "اكتب"
+
+#: src/prefs.js:403
+msgid "Search instantly"
+msgstr "ابحث فورًا"
+
+#: src/prefs.js:404
+msgid "Apply the suggested filter"
+msgstr "طبّق المرشّح المقترح"
+
+#: src/prefs.js:405
+msgid "Pin / unpin"
+msgstr "ثبّت / ألغِ التثبيت"
+
+#: src/prefs.js:406
+msgid "Edit text"
+msgstr "حرّر النص"
+
+#: src/prefs.js:407
+msgid "Add a tag"
+msgstr "أضف وسمًا"
+
+#: src/prefs.js:408
+msgid "Delete entry"
+msgstr "احذف العنصر"
+
+#: src/prefs.js:409
+msgid "Copy entry 1–9"
+msgstr "انسخ العنصر 1–9"
+
+#: src/prefs.js:410
+msgid "Clear search, then close"
+msgstr "امسح البحث ثم أغلق"
+
+#: src/prefs.js:430
+msgid "Press a Shortcut"
+msgstr "اضغط اختصارًا"
+
+#: src/prefs.js:431
+msgid "Esc to cancel · Backspace to disable"
+msgstr "Esc للإلغاء · Backspace للتعطيل"
+
+#: src/prefs.js:465
+msgid "About"
+msgstr "عن التطبيق"
+
+#: src/prefs.js:478
+#, javascript-format
+msgid "Version %s"
+msgstr "الإصدار %s"
+
+#: src/prefs.js:481
+msgid "Made by Dukha"
+msgstr "صُنع بواسطة Dukha"
+
+#: src/prefs.js:490
+msgid "Website and Source Code"
+msgstr "الموقع والشيفرة المصدرية"
+
+#: src/prefs.js:490
+msgid "Report a Problem"
+msgstr "أبلغ عن مشكلة"
+
+#: src/prefs.js:499
+msgid "Battery Friendly"
+msgstr "موفّر للبطارية"
+
+#: src/prefs.js:500
+msgid ""
+"Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
+"its list only when you open it, and writes to disk at most once every two "
+"seconds."
+msgstr ""
+"لا يفحص Clipboard+ الحافظة باستمرار أبدًا. يستيقظ فقط عند تغيّر الحافظة، ويبني "
+"قائمته فقط عند فتحها، ويكتب على القرص مرة واحدة كل ثانيتين على الأكثر."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "حرّر العنصر"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "ضع وسمًا للعنصر"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "تسمية قصيرة تظهر في القائمة ويمكن البحث عنها."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "مثل: عمل، عنوان، رمز"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "احفظ"
+
+#: src/lib/popup.js:32
+msgid "Images"
+msgstr "الصور"
+
+#: src/lib/popup.js:33
+msgid "Links"
+msgstr "الروابط"
+
+#: src/lib/popup.js:34
+msgid "Code"
+msgstr "الشيفرة"
+
+#: src/lib/popup.js:35
+msgid "Colors"
+msgstr "الألوان"
+
+#: src/lib/popup.js:36
+msgctxt "filter"
+msgid "Pinned"
+msgstr "المثبتة"
+
+#: src/lib/popup.js:37
+msgid "Files"
+msgstr "الملفات"
+
+#: src/lib/popup.js:38
+msgid "Text"
+msgstr "النص"
+
+#: src/lib/popup.js:214
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: src/lib/popup.js:416
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "اضغط Tab للتصفية حسب %s"
+
+#: src/lib/popup.js:509
+msgid "Pinned"
+msgstr "المثبتة"
+
+#: src/lib/popup.js:511
+msgid "History"
+msgstr "السجل"
+
+#: src/lib/popup.js:531
+msgid "Nothing copied yet"
+msgstr "لم يُنسخ شيء بعد"
+
+#: src/lib/popup.js:531
+msgid "No results"
+msgstr "لا نتائج"
+
+#: src/lib/popup.js:534
+msgid "Private Mode is on — copies are not recorded"
+msgstr "الوضع الخاص مفعّل — لا تُسجَّل النسخ"
+
+#: src/lib/popup.js:535
+msgid "Copied text and images will appear here"
+msgstr "ستظهر هنا النصوص والصور المنسوخة"
+
+#: src/lib/popup.js:536
+msgid "Try a different search or filter"
+msgstr "جرّب بحثًا أو مرشّحًا آخر"
+
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr "أظهر في المجلد"
+
+#: src/lib/popup.js:601
+msgid "Unpin"
+msgstr "ألغِ التثبيت"
+
+#: src/lib/popup.js:601
+msgid "Pin"
+msgstr "ثبّت"
+
+#: src/lib/popup.js:606
+msgid "Delete"
+msgstr "احذف"
+
+#: src/lib/popup.js:838
+msgid "Clear clipboard history?"
+msgstr "أتريد مسح سجل الحافظة؟"
+
+#: src/lib/popup.js:839
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "ستُحذف كل العناصر عدا المثبتة. لا يمكن التراجع عن هذا."
+
+#: src/lib/popup.js:840
+msgid "Clear"
+msgstr "امسح"
+
+#: src/lib/popup.js:890 src/lib/popup.js:908
+msgid "Could not open"
+msgstr "تعذّر الفتح"
+
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr "افتح"
+
+#: src/lib/preview.js:222 src/lib/util.js:39
+msgid "now"
+msgstr "الآن"
+
+#: src/lib/preview.js:222
+#, javascript-format
+msgid "%s ago"
+msgstr "منذ %s"
+
+#: src/lib/preview.js:226
+msgid "Esc"
+msgstr "Esc"
+
+#: src/lib/preview.js:226
+msgid "Close"
+msgstr "أغلق"
+
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr "كبّر"
+
+#: src/lib/preview.js:242 src/lib/util.js:63
+msgid "Image"
+msgstr "صورة"
+
+#: src/lib/preview.js:295
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d عنصر"
+msgstr[1] "%d عنصر"
+msgstr[2] "%d عنصران"
+msgstr[3] "%d عناصر"
+msgstr[4] "%d عنصرًا"
+msgstr[5] "%d عنصر"
+
+#: src/lib/preview.js:297
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d حرف"
+msgstr[1] "%d حرف"
+msgstr[2] "%d حرفان"
+msgstr[3] "%d أحرف"
+msgstr[4] "%d حرفًا"
+msgstr[5] "%d حرف"
+
+#: src/lib/preview.js:299
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d سطر"
+msgstr[1] "%d سطر"
+msgstr[2] "%d سطران"
+msgstr[3] "%d أسطر"
+msgstr[4] "%d سطرًا"
+msgstr[5] "%d سطر"
+
+#: src/lib/preview.js:314
+msgid "Link"
+msgstr "رابط"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d د"
+msgstr[1] "%d د"
+msgstr[2] "%d د"
+msgstr[3] "%d د"
+msgstr[4] "%d د"
+msgstr[5] "%d د"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d س"
+msgstr[1] "%d س"
+msgstr[2] "%d س"
+msgstr[3] "%d س"
+msgstr[4] "%d س"
+msgstr[5] "%d س"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "أمس"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d يوم"
+msgstr[1] "%d يوم"
+msgstr[2] "%d يومان"
+msgstr[3] "%d أيام"
+msgstr[4] "%d يومًا"
+msgstr[5] "%d يوم"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "صورة — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s و%d آخرين"
