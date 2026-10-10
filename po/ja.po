@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"POT-Creation-Date: 2026-10-10 19:41+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
 "Language-Team: Japanese\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/extension.js:38
+#: src/extension.js:39
 msgid "Copied"
 msgstr "コピーしました"
 
-#: src/extension.js:121
+#: src/extension.js:122
 msgid "Clipboard"
 msgstr "クリップボード"
 

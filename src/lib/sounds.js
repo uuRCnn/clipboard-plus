@@ -54,16 +54,26 @@ function loadGst() {
 
 /**
  * @param {string} path a 16-bit mono WAV file at RATE
- * @returns {Int16Array|null} its samples
+ * @returns {Promise<Int16Array|null>} its samples
  */
 function readWav(path) {
-    let bytes;
-    try {
-        [, bytes] = GLib.file_get_contents(path);
-    } catch (e) {
-        console.warn(`Clipboard+: could not read ${path}: ${e.message}`);
-        return null;
-    }
+    return new Promise(resolve => {
+        Gio.File.new_for_path(path).load_bytes_async(null, (file, res) => {
+            try {
+                resolve(parseWav(file.load_bytes_finish(res)[0].toArray()));
+            } catch (e) {
+                console.warn(`Clipboard+: could not read ${path}: ${e.message}`);
+                resolve(null);
+            }
+        });
+    });
+}
+
+/**
+ * @param {Uint8Array} bytes contents of a 16-bit mono WAV file
+ * @returns {Int16Array|null} its samples
+ */
+function parseWav(bytes) {
     const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
     // Walk the RIFF chunks to the "data" chunk.
     for (let pos = 12; pos + 8 <= bytes.length;) {
@@ -154,11 +164,10 @@ export class SoundPlayer {
         if (!this.enabled || !this._settings.get_boolean(`sound-${name}`))
             return;
         this._cancelRelease();
-        loadGst().then(Gst => {
+        Promise.all([loadGst(), this._sound(name)]).then(([Gst, samples]) => {
             if (this._destroyed)
                 return;
-            const samples = Gst ? this._sound(name) : null;
-            if (!samples || !this._createVoices(Gst)) {
+            if (!Gst || !samples || !this._createVoices(Gst)) {
                 this._playWithMeta(name);
                 return;
             }
@@ -169,6 +178,7 @@ export class SoundPlayer {
             this._scheduleRelease();
     }
 
+    /** @returns {Promise<Int16Array|null>} the samples of a sound, read once */
     _sound(name) {
         if (!this._samples.has(name))
             this._samples.set(name, readWav(this._file(name)));

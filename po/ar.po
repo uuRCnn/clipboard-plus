@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 15:03+0300\n"
+"POT-Creation-Date: 2026-10-10 19:41+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
 "Language-Team: Arabic\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
 
-#: src/extension.js:38
+#: src/extension.js:39
 msgid "Copied"
 msgstr "تم النسخ"
 
-#: src/extension.js:121
+#: src/extension.js:122
 msgid "Clipboard"
 msgstr "الحافظة"
 

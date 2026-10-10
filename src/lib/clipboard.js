@@ -62,7 +62,6 @@ export class ClipboardService {
         if (this._pasteId)
             GLib.source_remove(this._pasteId);
         this._pasteId = 0;
-        this._device?.run_dispose();
         this._device = null;
         this.onCopied = null;
     }

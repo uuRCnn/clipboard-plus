@@ -1,6 +1,7 @@
 // Clipboard+ — a minimal clipboard manager for GNOME Shell.
 // Made by Dukha.
 
+import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import Meta from 'gi://Meta';
 import Shell from 'gi://Shell';
@@ -124,14 +125,18 @@ export default class ClipboardPlusExtension extends Extension {
     // ---- automatic clearing ----
 
     _clearOnBoot() {
-        let bootId = '';
-        try {
-            const [ok, contents] = GLib.file_get_contents('/proc/sys/kernel/random/boot_id');
-            if (ok)
-                bootId = new TextDecoder().decode(contents).trim();
-        } catch {}
-        if (!bootId)
-            return;
+        Gio.File.new_for_path('/proc/sys/kernel/random/boot_id').load_contents_async(null, (file, res) => {
+            let bootId = '';
+            try {
+                bootId = new TextDecoder().decode(file.load_contents_finish(res)[1]).trim();
+            } catch {}
+            // The extension may have been disabled while reading.
+            if (bootId && this._settings)
+                this._checkBootId(bootId);
+        });
+    }
+
+    _checkBootId(bootId) {
         const last = this._settings.get_string('last-boot-id');
         if (last !== bootId) {
             if (last && this._settings.get_boolean('clear-on-boot'))
