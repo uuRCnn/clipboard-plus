@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="clipboard-plus">
+  <enum id="org.gnome.shell.extensions.clipboard-plus.layout">
+    <value nick="default" value="0"/>
+    <value nick="spotlight" value="1"/>
+    <value nick="cards" value="2"/>
+    <value nick="compact" value="3"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.clipboard-plus" path="/org/gnome/shell/extensions/clipboard-plus/">
+    <!-- Behaviour -->
+    <key name="history-size" type="i">
+      <range min="5" max="500"/>
+      <default>50</default>
+      <summary>Maximum number of unpinned entries</summary>
+    </key>
+    <key name="paste-on-select" type="b">
+      <default>false</default>
+      <summary>Paste the entry into the focused window after selecting it</summary>
+    </key>
+    <key name="move-to-top" type="b">
+      <default>true</default>
+      <summary>Move a selected or re-copied entry to the top of the history</summary>
+    </key>
+    <key name="strip-whitespace" type="b">
+      <default>false</default>
+      <summary>Remove leading and trailing whitespace from copied text</summary>
+    </key>
+    <key name="notify-on-copy" type="b">
+      <default>false</default>
+      <summary>Show a notification when something is copied</summary>
+    </key>
+    <key name="blink-icon" type="b">
+      <default>true</default>
+      <summary>Gently pulse the panel icon when something is copied</summary>
+    </key>
+    <key name="case-sensitive-search" type="b">
+      <default>false</default>
+      <summary>Case sensitive search</summary>
+    </key>
+    <key name="regex-search" type="b">
+      <default>false</default>
+      <summary>Treat the search text as a regular expression</summary>
+    </key>
+
+    <!-- Appearance -->
+    <key name="layout" enum="org.gnome.shell.extensions.clipboard-plus.layout">
+      <default>'default'</default>
+      <summary>Popup layout</summary>
+    </key>
+    <key name="show-time" type="b">
+      <default>true</default>
+      <summary>Show how long ago an entry was copied</summary>
+    </key>
+    <key name="show-preview" type="b">
+      <default>true</default>
+      <summary>Show the large preview card next to the popup</summary>
+    </key>
+    <key name="preview-delay-pointer" type="i">
+      <range min="0" max="2000"/>
+      <default>400</default>
+      <summary>Preview delay when hovering with the pointer (ms)</summary>
+    </key>
+    <key name="preview-delay-keyboard" type="i">
+      <range min="0" max="2000"/>
+      <default>200</default>
+      <summary>Preview delay when navigating with the keyboard (ms)</summary>
+    </key>
+
+    <!-- Privacy & storage -->
+    <key name="private-mode" type="b">
+      <default>false</default>
+      <summary>Private mode: do not record anything</summary>
+    </key>
+    <key name="excluded-apps" type="as">
+      <default>['org.keepassxc.KeePassXC', 'com.bitwarden.desktop', 'bitwarden', '1password', 'org.gnome.World.Secrets']</default>
+      <summary>Applications whose copies are never recorded</summary>
+    </key>
+    <key name="cache-history" type="b">
+      <default>true</default>
+      <summary>Keep history across restarts</summary>
+    </key>
+    <key name="cache-pinned-only" type="b">
+      <default>false</default>
+      <summary>Only keep pinned entries across restarts</summary>
+    </key>
+    <key name="cache-images" type="b">
+      <default>true</default>
+      <summary>Record images</summary>
+    </key>
+    <key name="max-image-size" type="i">
+      <range min="1" max="100"/>
+      <default>15</default>
+      <summary>Largest image to record (MB)</summary>
+    </key>
+    <key name="clear-on-boot" type="b">
+      <default>false</default>
+      <summary>Clear unpinned history after every boot</summary>
+    </key>
+    <key name="clear-interval" type="i">
+      <range min="0" max="525600"/>
+      <default>0</default>
+      <summary>Clear unpinned history every N minutes (0 = never)</summary>
+    </key>
+    <key name="next-clear-time" type="x">
+      <default>0</default>
+      <summary>Internal: unix time of the next scheduled clear</summary>
+    </key>
+    <key name="last-boot-id" type="s">
+      <default>''</default>
+      <summary>Internal: boot id seen last</summary>
+    </key>
+    <key name="confirm-clear" type="b">
+      <default>true</default>
+      <summary>Ask before clearing the history</summary>
+    </key>
+
+    <!-- Keyboard shortcuts -->
+    <key name="enable-keybindings" type="b">
+      <default>true</default>
+      <summary>Enable global keyboard shortcuts</summary>
+    </key>
+    <key name="toggle-menu" type="as">
+      <default><![CDATA[['<Super><Shift>v']]]></default>
+      <summary>Open / close the clipboard popup</summary>
+    </key>
+    <key name="next-entry" type="as">
+      <default><![CDATA[[]]]></default>
+      <summary>Copy the next (older) entry</summary>
+    </key>
+    <key name="prev-entry" type="as">
+      <default><![CDATA[[]]]></default>
+      <summary>Copy the previous (newer) entry</summary>
+    </key>
+    <key name="clear-history" type="as">
+      <default><![CDATA[[]]]></default>
+      <summary>Clear history</summary>
+    </key>
+    <key name="toggle-private-mode" type="as">
+      <default><![CDATA[[]]]></default>
+      <summary>Toggle private mode</summary>
+    </key>
+  </schema>
+</schemalist>

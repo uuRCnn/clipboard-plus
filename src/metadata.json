@@ -1,0 +1,10 @@
+{
+  "uuid": "clipboard-plus@dukha",
+  "name": "Clipboard+",
+  "description": "A minimal, beautiful clipboard manager. Clipboard history for text, images, links, colors and code — with instant search, smart filters, a large preview card, pinning, private mode and keyboard navigation.\n\nEvent-driven (no polling) for near-zero battery usage.\n\nOpen with Super+Shift+V. Made by Dukha.",
+  "shell-version": ["46", "47", "48", "49", "50", "51"],
+  "url": "https://github.com/uuRCnn/clipboard-plus",
+  "settings-schema": "org.gnome.shell.extensions.clipboard-plus",
+  "gettext-domain": "clipboard-plus",
+  "version-name": "1.0"
+}

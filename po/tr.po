@@ -1,0 +1,601 @@
+# Turkish translation for Clipboard+.
+# Copyright (C) 2026 Dukha
+# This file is distributed under the same license as the Clipboard+ package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clipboard+\n"
+"PO-Revision-Date: 2026-10-10 12:00+0300\n"
+"Last-Translator: Dukha\n"
+"Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extension.js:30
+msgid "Copied"
+msgstr "Kopyalandı"
+
+#: src/extension.js:111
+msgid "Clipboard"
+msgstr "Pano"
+
+#: src/prefs.js:12
+msgid "Default"
+msgstr "Varsayılan"
+
+#: src/prefs.js:12
+msgid "Calm single-line list"
+msgstr "Sakin, tek satırlı liste"
+
+#: src/prefs.js:13
+msgid "Spotlight"
+msgstr "Spotlight"
+
+#: src/prefs.js:13
+msgid "Source app and time"
+msgstr "Kaynak uygulama ve zaman"
+
+#: src/prefs.js:14
+msgid "Cards"
+msgstr "Kartlar"
+
+#: src/prefs.js:14
+msgid "Large visual previews"
+msgstr "Büyük görsel önizlemeler"
+
+#: src/prefs.js:15
+msgid "Compact"
+msgstr "Kompakt"
+
+#: src/prefs.js:15
+msgid "Most entries, least space"
+msgstr "En az alanda en çok öğe"
+
+#: src/prefs.js:19
+msgid "Never"
+msgstr "Asla"
+
+#: src/prefs.js:20
+msgid "Every 30 minutes"
+msgstr "Her 30 dakikada"
+
+#: src/prefs.js:21
+msgid "Every hour"
+msgstr "Her saat"
+
+#: src/prefs.js:22
+msgid "Every 6 hours"
+msgstr "Her 6 saatte"
+
+#: src/prefs.js:23
+msgid "Every day"
+msgstr "Her gün"
+
+#: src/prefs.js:24
+msgid "Every week"
+msgstr "Her hafta"
+
+#: src/prefs.js:28
+msgid "Open clipboard"
+msgstr "Panoyu aç"
+
+#: src/prefs.js:29
+msgid "Copy older entry"
+msgstr "Daha eski öğeyi kopyala"
+
+#: src/prefs.js:30
+msgid "Copy newer entry"
+msgstr "Daha yeni öğeyi kopyala"
+
+#: src/prefs.js:31
+msgid "Clear history"
+msgstr "Geçmişi temizle"
+
+#: src/prefs.js:32
+msgid "Toggle Private Mode"
+msgstr "Gizli Modu aç/kapat"
+
+#: src/prefs.js:70
+msgid "General"
+msgstr "Genel"
+
+#: src/prefs.js:72
+msgid "Behavior"
+msgstr "Davranış"
+
+#: src/prefs.js:73
+msgid "Paste on Select"
+msgstr "Seçince Yapıştır"
+
+#: src/prefs.js:74
+msgid "Paste into the active window after choosing an entry"
+msgstr "Bir öğe seçildiğinde etkin pencereye yapıştır"
+
+#: src/prefs.js:75
+msgid "Move Used Entries to Top"
+msgstr "Kullanılan Öğeyi Başa Taşı"
+
+#: src/prefs.js:76
+msgid "Trim Whitespace"
+msgstr "Boşlukları Kırp"
+
+#: src/prefs.js:77
+msgid "Remove spaces and line breaks around copied text"
+msgstr "Kopyalanan metnin başındaki ve sonundaki boşlukları sil"
+
+#: src/prefs.js:78
+msgid "History Size"
+msgstr "Geçmiş Boyutu"
+
+#: src/prefs.js:79
+msgid "Pinned entries do not count"
+msgstr "Sabitlenen öğeler sayılmaz"
+
+#: src/prefs.js:82
+msgid "Feedback"
+msgstr "Geri Bildirim"
+
+#: src/prefs.js:83
+msgid "Animate Panel Icon"
+msgstr "Panel Simgesini Canlandır"
+
+#: src/prefs.js:84
+msgid "A short pulse when something is copied"
+msgstr "Bir şey kopyalandığında kısa bir titreşim"
+
+#: src/prefs.js:85
+msgid "Notification on Copy"
+msgstr "Kopyalayınca Bildirim Göster"
+
+#: src/prefs.js:88 src/lib/popup.js:122
+msgid "Search"
+msgstr "Ara"
+
+#: src/prefs.js:89
+msgid "Case Sensitive"
+msgstr "Büyük/Küçük Harf Duyarlı"
+
+#: src/prefs.js:90
+msgid "Regular Expressions"
+msgstr "Düzenli İfadeler (Regex)"
+
+#: src/prefs.js:96
+msgid "Appearance"
+msgstr "Görünüm"
+
+#: src/prefs.js:99
+msgid "Layout"
+msgstr "Düzen"
+
+#: src/prefs.js:100
+msgid "How the clipboard popup looks"
+msgstr "Pano penceresinin görünümü"
+
+#: src/prefs.js:151
+msgid "Details"
+msgstr "Ayrıntılar"
+
+#: src/prefs.js:152
+msgid "Show Time"
+msgstr "Zamanı Göster"
+
+#: src/prefs.js:153
+msgid "How long ago each entry was copied"
+msgstr "Her öğenin ne kadar önce kopyalandığı"
+
+#: src/prefs.js:157
+msgid "Preview Card"
+msgstr "Önizleme Kartı"
+
+#: src/prefs.js:158
+msgid "A large preview of the selected entry next to the popup"
+msgstr "Seçili öğenin pencerenin yanında büyük önizlemesi"
+
+#: src/prefs.js:160
+msgid "Show Preview Card"
+msgstr "Önizleme Kartını Göster"
+
+#: src/prefs.js:161
+msgid "Delay with Mouse"
+msgstr "Fare ile Gecikme"
+
+#: src/prefs.js:161 src/prefs.js:162
+msgid "Milliseconds"
+msgstr "Milisaniye"
+
+#: src/prefs.js:162
+msgid "Delay with Arrow Keys"
+msgstr "Ok Tuşları ile Gecikme"
+
+#: src/prefs.js:172 src/prefs.js:174
+msgid "Privacy"
+msgstr "Gizlilik"
+
+#: src/prefs.js:175 src/lib/popup.js:183
+msgid "Private Mode"
+msgstr "Gizli Mod"
+
+#: src/prefs.js:176
+msgid "Nothing is recorded while this is on"
+msgstr "Açıkken hiçbir şey kaydedilmez"
+
+#: src/prefs.js:183 src/prefs.js:270
+msgid "Add Application"
+msgstr "Uygulama Ekle"
+
+#: src/prefs.js:187
+msgid "Excluded Applications"
+msgstr "Hariç Tutulan Uygulamalar"
+
+#: src/prefs.js:188
+msgid "Copies made in these apps are never recorded. Password managers are excluded by default."
+msgstr "Bu uygulamalarda yapılan kopyalar asla kaydedilmez. Şifre yöneticileri varsayılan olarak hariçtir."
+
+#: src/prefs.js:207
+msgid "Remove"
+msgstr "Kaldır"
+
+#: src/prefs.js:216
+msgid "No excluded applications"
+msgstr "Hariç tutulan uygulama yok"
+
+#: src/prefs.js:230
+msgid "Storage"
+msgstr "Depolama"
+
+#: src/prefs.js:231
+msgid "Remember History"
+msgstr "Geçmişi Hatırla"
+
+#: src/prefs.js:232
+msgid "Keep entries after logging out or restarting"
+msgstr "Oturum kapatıldıktan veya yeniden başlatıldıktan sonra da sakla"
+
+#: src/prefs.js:233
+msgid "Remember Only Pinned Entries"
+msgstr "Yalnızca Sabitlenenleri Hatırla"
+
+#: src/prefs.js:236
+msgid "Record Images"
+msgstr "Görselleri Kaydet"
+
+#: src/prefs.js:237
+msgid "Largest Image"
+msgstr "En Büyük Görsel"
+
+#: src/prefs.js:237
+msgid "Megabytes"
+msgstr "Megabayt"
+
+#: src/prefs.js:242
+msgid "Automatic Cleanup"
+msgstr "Otomatik Temizlik"
+
+#: src/prefs.js:242
+msgid "Pinned entries are always kept"
+msgstr "Sabitlenen öğeler her zaman korunur"
+
+#: src/prefs.js:243
+msgid "Clear After Restart"
+msgstr "Yeniden Başlatınca Temizle"
+
+#: src/prefs.js:247 src/lib/popup.js:193
+msgid "Clear History"
+msgstr "Geçmişi Temizle"
+
+#: src/prefs.js:264
+msgid "Ask Before Clearing"
+msgstr "Temizlemeden Önce Sor"
+
+#: src/prefs.js:274
+msgid "Search applications"
+msgstr "Uygulama ara"
+
+#: src/prefs.js:303
+msgid "Shortcuts"
+msgstr "Kısayollar"
+
+#: src/prefs.js:305
+msgid "Global Shortcuts"
+msgstr "Genel Kısayollar"
+
+#: src/prefs.js:306
+msgid "Enable Shortcuts"
+msgstr "Kısayolları Etkinleştir"
+
+#: src/prefs.js:313
+msgid "Disabled"
+msgstr "Kapalı"
+
+#: src/prefs.js:332
+msgid "Inside the Popup"
+msgstr "Pencere İçinde"
+
+#: src/prefs.js:334
+msgid "Move selection — the preview card follows"
+msgstr "Seçimi taşı — önizleme kartı da takip eder"
+
+#: src/prefs.js:335
+msgid "Copy (and paste, if enabled)"
+msgstr "Kopyala (ve açıksa yapıştır)"
+
+#: src/prefs.js:336
+msgid "Open link or file"
+msgstr "Bağlantıyı veya dosyayı aç"
+
+#: src/prefs.js:337
+msgid "Type"
+msgstr "Yaz"
+
+#: src/prefs.js:337
+msgid "Search instantly"
+msgstr "Anında ara"
+
+#: src/prefs.js:338
+msgid "Apply the suggested filter"
+msgstr "Önerilen filtreyi uygula"
+
+#: src/prefs.js:339
+msgid "Enlarge preview"
+msgstr "Önizlemeyi büyüt"
+
+#: src/prefs.js:340
+msgid "Pin / unpin"
+msgstr "Sabitle / sabitlemeyi kaldır"
+
+#: src/prefs.js:341
+msgid "Edit text"
+msgstr "Metni düzenle"
+
+#: src/prefs.js:342
+msgid "Add a tag"
+msgstr "Etiket ekle"
+
+#: src/prefs.js:343
+msgid "Delete entry"
+msgstr "Öğeyi sil"
+
+#: src/prefs.js:344
+msgid "Copy entry 1–9"
+msgstr "1–9. öğeyi kopyala"
+
+#: src/prefs.js:345
+msgid "Clear search, then close"
+msgstr "Aramayı temizle, sonra kapat"
+
+#: src/prefs.js:365
+msgid "Press a Shortcut"
+msgstr "Bir Kısayola Basın"
+
+#: src/prefs.js:366
+msgid "Esc to cancel · Backspace to disable"
+msgstr "İptal için Esc · Kapatmak için Backspace"
+
+#: src/prefs.js:400
+msgid "About"
+msgstr "Hakkında"
+
+#: src/prefs.js:413
+#, javascript-format
+msgid "Version %s"
+msgstr "Sürüm %s"
+
+#: src/prefs.js:416
+msgid "Made by Dukha"
+msgstr "Dukha tarafından yapıldı"
+
+#: src/prefs.js:425
+msgid "Website and Source Code"
+msgstr "Web Sitesi ve Kaynak Kod"
+
+#: src/prefs.js:425
+msgid "Report a Problem"
+msgstr "Sorun Bildir"
+
+#: src/prefs.js:434
+msgid "Battery Friendly"
+msgstr "Pil Dostu"
+
+#: src/prefs.js:435
+msgid "Clipboard+ never polls. It only wakes up when the clipboard changes, builds its list only when you open it, and writes to disk at most once every two seconds."
+msgstr "Clipboard+ hiçbir zaman sürekli kontrol yapmaz. Yalnızca pano değiştiğinde uyanır, listeyi yalnızca siz açtığınızda oluşturur ve diske en fazla iki saniyede bir yazar."
+
+#: src/lib/dialogs.js:25
+msgid "Edit Entry"
+msgstr "Öğeyi Düzenle"
+
+#: src/lib/dialogs.js:25
+msgid "Tag Entry"
+msgstr "Öğeyi Etiketle"
+
+#: src/lib/dialogs.js:26
+msgid "A short label that is shown in the list and can be searched."
+msgstr "Listede görünen ve aranabilen kısa bir etiket."
+
+#: src/lib/dialogs.js:33
+msgid "e.g. Work, Address, Token"
+msgstr "örn. İş, Adres, Token"
+
+#: src/lib/dialogs.js:49 src/lib/dialogs.js:64
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/lib/dialogs.js:50
+msgid "Save"
+msgstr "Kaydet"
+
+#: src/lib/popup.js:28
+msgid "Images"
+msgstr "Görsel"
+
+#: src/lib/popup.js:29
+msgid "Links"
+msgstr "Bağlantı"
+
+#: src/lib/popup.js:30
+msgid "Code"
+msgstr "Kod"
+
+#: src/lib/popup.js:31
+msgid "Colors"
+msgstr "Renk"
+
+#: src/lib/popup.js:32
+msgctxt "filter"
+msgid "Pinned"
+msgstr "Sabitli"
+
+#: src/lib/popup.js:33
+msgid "Files"
+msgstr "Dosya"
+
+#: src/lib/popup.js:34
+msgid "Text"
+msgstr "Metin"
+
+#: src/lib/popup.js:195
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/lib/popup.js:351
+#, javascript-format
+msgid "Press Tab to filter by %s"
+msgstr "%s filtresini uygulamak için Tab"
+
+#: src/lib/popup.js:444
+msgid "Pinned"
+msgstr "Sabitlenenler"
+
+#: src/lib/popup.js:446
+msgid "History"
+msgstr "Geçmiş"
+
+#: src/lib/popup.js:466
+msgid "Nothing copied yet"
+msgstr "Henüz bir şey kopyalanmadı"
+
+#: src/lib/popup.js:466
+msgid "No results"
+msgstr "Sonuç yok"
+
+#: src/lib/popup.js:469
+msgid "Private Mode is on — copies are not recorded"
+msgstr "Gizli Mod açık — kopyalar kaydedilmiyor"
+
+#: src/lib/popup.js:470
+msgid "Copied text and images will appear here"
+msgstr "Kopyaladığınız metin ve görseller burada görünür"
+
+#: src/lib/popup.js:471
+msgid "Try a different search or filter"
+msgstr "Farklı bir arama veya filtre deneyin"
+
+#: src/lib/popup.js:531
+msgid "Unpin"
+msgstr "Sabitlemeyi kaldır"
+
+#: src/lib/popup.js:531
+msgid "Pin"
+msgstr "Sabitle"
+
+#: src/lib/popup.js:536
+msgid "Delete"
+msgstr "Sil"
+
+#: src/lib/popup.js:736
+msgid "Clear clipboard history?"
+msgstr "Pano geçmişi temizlensin mi?"
+
+#: src/lib/popup.js:737
+msgid "All entries except pinned ones will be deleted. This cannot be undone."
+msgstr "Sabitlenenler dışındaki tüm öğeler silinecek. Bu işlem geri alınamaz."
+
+#: src/lib/popup.js:738
+msgid "Clear"
+msgstr "Temizle"
+
+#: src/lib/popup.js:757
+msgid "Could not open"
+msgstr "Açılamadı"
+
+#: src/lib/preview.js:176 src/lib/util.js:39
+msgid "now"
+msgstr "şimdi"
+
+#: src/lib/preview.js:176
+#, javascript-format
+msgid "%s ago"
+msgstr "%s önce"
+
+#: src/lib/preview.js:180
+msgid "Esc  Close"
+msgstr "Esc  Kapat"
+
+#: src/lib/preview.js:180
+msgid "Space  Enlarge"
+msgstr "Boşluk  Büyüt"
+
+#: src/lib/preview.js:196 src/lib/util.js:63
+msgid "Image"
+msgstr "Görsel"
+
+#: src/lib/preview.js:249
+#, javascript-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d öğe"
+
+#: src/lib/preview.js:251
+#, javascript-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d karakter"
+
+#: src/lib/preview.js:253
+#, javascript-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d satır"
+
+#: src/lib/preview.js:255 src/lib/preview.js:277
+msgid "Ctrl+Enter  Open"
+msgstr "Ctrl+Enter  Aç"
+
+#: src/lib/preview.js:268
+msgid "Link"
+msgstr "Bağlantı"
+
+#: src/lib/util.js:42
+#, javascript-format
+msgid "%d min"
+msgid_plural "%d min"
+msgstr[0] "%d dk"
+
+#: src/lib/util.js:45
+#, javascript-format
+msgid "%d h"
+msgid_plural "%d h"
+msgstr[0] "%d sa"
+
+#: src/lib/util.js:48
+msgid "yesterday"
+msgstr "dün"
+
+#: src/lib/util.js:50
+#, javascript-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d gün"
+
+#: src/lib/util.js:62
+#, javascript-format
+msgid "Image — %d × %d"
+msgstr "Görsel — %d × %d"
+
+#: src/lib/util.js:76
+#, javascript-format
+msgid "%s and %d more"
+msgstr "%s ve %d tane daha"
