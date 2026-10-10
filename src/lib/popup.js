@@ -14,11 +14,15 @@ import {gettext as _, pgettext} from 'resource:///org/gnome/shell/extensions/ext
 
 import {Kind, oneLine, parseColor, rgbToHex} from './kinds.js';
 import {KIND_ICON, entryTitle, makeIcon, relativeTime} from './util.js';
-import {animationsEnabled, onKeyPress, scrollToActor, vbox} from './compat.js';
+import {animationsEnabled, noPopupAnimation, onKeyPress, scrollToActor, vbox} from './compat.js';
 import {PreviewCard} from './preview.js';
 import {EditDialog, ConfirmDialog} from './dialogs.js';
+import {Sound, SoundPlayer} from './sounds.js';
 
 const MAX_ROWS = 200;
+// Rows that fade in when the popup opens; the rest appear at once.
+const STAGGER_ROWS = 8;
+const STAGGER_STEP_MS = 14;
 const LAYOUT_WIDTH = {default: 390, spotlight: 440, cards: 500, compact: 360};
 // cards layout: popup width - list padding (2 × 7) - gap (10), two columns
 const CARD_WIDTH = (LAYOUT_WIDTH.cards - 14 - 10) / 2;
@@ -66,7 +70,15 @@ class ClipboardButton extends PanelMenu.Button {
         this.menu.addMenuItem(this._section);
         this._buildUi();
 
-        this._preview = new PreviewCard(this._store, this._path);
+        this._preview = new PreviewCard(this._store, this._path, () => this._motion(), this._settings);
+        this._sounds = new SoundPlayer(this._settings, GLib.build_filenamev([this._path, 'sounds']));
+
+        // With animations turned off, the popup itself opens and closes
+        // without its slide / fade too.
+        const open = this.menu.open.bind(this.menu);
+        const close = this.menu.close.bind(this.menu);
+        this.menu.open = params => open(this._motion() ? params : noPopupAnimation(this.menu));
+        this.menu.close = params => close(this._motion() ? params : noPopupAnimation(this.menu));
 
         this._storeChangedId = this._store.connectChanged(() => {
             if (this.menu.isOpen)
@@ -76,6 +88,7 @@ class ClipboardButton extends PanelMenu.Button {
         this._settingsIds = [
             this._settings.connect('changed::private-mode', () => this._updatePrivate()),
             this._settings.connect('changed::layout', () => this._applyLayout()),
+            this._settings.connect('changed::enable-animations', () => this._applyMotion()),
         ];
 
         this._interface = new Gio.Settings({schema_id: 'org.gnome.desktop.interface'});
@@ -84,6 +97,7 @@ class ClipboardButton extends PanelMenu.Button {
             : 0;
         this._applyAccent();
         this._applyLayout();
+        this._applyMotion();
         this._updatePrivate();
 
         this.menu.connect('open-state-changed', (_m, open) => {
@@ -183,6 +197,11 @@ class ClipboardButton extends PanelMenu.Button {
         pbox.add_child(new St.Label({text: _('Private Mode'), style_class: 'cbp-private-label', y_align: Clutter.ActorAlign.CENTER}));
         this._switch = new PopupMenu.Switch(this._settings.get_boolean('private-mode'));
         this._switch.add_style_class_name('cbp-switch');
+        // Since GNOME 51 the switch handles clicks and drags itself and
+        // would flip without changing the setting. It only mirrors the
+        // setting; the whole button toggles it.
+        this._switch.reactive = false;
+        this._switch.can_focus = false;
         pbox.add_child(this._switch);
         this._privateButton.set_child(pbox);
         this._privateButton.connect('clicked', () =>
@@ -235,6 +254,19 @@ class ClipboardButton extends PanelMenu.Button {
             this._refresh();
     }
 
+    /** @returns {boolean} whether to animate (our setting and the system's) */
+    _motion() {
+        return this._settings.get_boolean('enable-animations') && animationsEnabled();
+    }
+
+    _applyMotion() {
+        // CSS transitions (selection highlight, hover) follow the setting too.
+        if (this._settings.get_boolean('enable-animations'))
+            this._root.remove_style_class_name('cbp-no-anim');
+        else
+            this._root.add_style_class_name('cbp-no-anim');
+    }
+
     _updateIcon() {
         const priv = this._settings.get_boolean('private-mode');
         this._icon.gicon = makeIcon(priv ? 'clipboard-plus-off' : 'clipboard-plus', this._path);
@@ -250,7 +282,7 @@ class ClipboardButton extends PanelMenu.Button {
 
     /** Briefly pulse the panel icon when something is copied. */
     pulse() {
-        if (!this._settings.get_boolean('blink-icon') || !animationsEnabled())
+        if (!this._settings.get_boolean('blink-icon') || !this._motion())
             return;
         this._icon.remove_all_transitions();
         this._icon.set_pivot_point(0.5, 0.5);
@@ -270,15 +302,31 @@ class ClipboardButton extends PanelMenu.Button {
 
     // ---------------------------------------------------------------- open / close
 
+    /** Open or close the popup from the global shortcut. */
+    toggleFromShortcut() {
+        if (this.menu.isOpen) {
+            this.menu.close();
+            return;
+        }
+        if (!this.mapped || !this.reactive)
+            return;
+        this.menu.open();
+    }
+
     _onOpen() {
         this._query = '';
         this._token = null;
         this._engaged = false;
         this._selected = -1;
+        this._activating = false;
         this._entry.set_text('');
         this._tokenButton.hide();
         this._setEngaged(false);
         this._refresh();
+        this._sounds.prepare();
+        this._sounds.play(Sound.OPEN);
+        if (this._motion())
+            this._staggerRows();
         // Keep keyboard focus in the search field so typing just works,
         // while arrow keys move the selection.
         this._later(0, () => {
@@ -288,9 +336,26 @@ class ClipboardButton extends PanelMenu.Button {
         });
     }
 
+    /** Let the first rows drift in one after another. */
+    _staggerRows() {
+        this._list.get_children().slice(0, STAGGER_ROWS).forEach((actor, i) => {
+            actor.opacity = 0;
+            actor.translation_y = -6;
+            actor.ease({
+                opacity: 255,
+                translation_y: 0,
+                delay: i * STAGGER_STEP_MS,
+                duration: 180,
+                mode: Clutter.AnimationMode.EASE_OUT_QUAD,
+            });
+        });
+    }
+
     _onClose() {
         this._clearPreviewTimeout();
-        this._preview.hide();
+        this._sounds?.done();
+        // Also reached from _onDestroy() when disabled while open.
+        this._preview?.hide();
     }
 
     _later(ms, fn) {
@@ -526,8 +591,13 @@ class ClipboardButton extends PanelMenu.Button {
             content = this._rowContent(entry, layout);
         main.set_child(content.actor);
 
-        // Hover actions: pin, delete (replace the time label while hovered)
+        // Hover actions: [folder], pin, delete (replace the time label while hovered)
         const actions = new St.BoxLayout({style_class: 'cbp-actions', visible: false, y_align: Clutter.ActorAlign.CENTER});
+        const filePath = this._filePath(entry);
+        if (filePath) {
+            actions.add_child(this._iconButton('folder-open-symbolic', _('Show in Folder'),
+                () => this._showInFolder(filePath), 'cbp-action'));
+        }
         const pin = this._iconButton('view-pin-symbolic', entry.pinned ? _('Unpin') : _('Pin'),
             () => this._store.togglePin(entry), 'cbp-action');
         if (entry.pinned)
@@ -633,6 +703,10 @@ class ClipboardButton extends PanelMenu.Button {
         return true;
     }
 
+    /**
+     * @param {number} index row index
+     * @param {string} source 'keyboard', 'pointer', 'open' or 'refresh'
+     */
     _select(index, source) {
         if (index < 0 || index >= this._rows.length)
             return;
@@ -645,7 +719,9 @@ class ClipboardButton extends PanelMenu.Button {
         row.add_style_class_name('selected');
         if (source === 'keyboard')
             scrollToActor(this._scroll, row);
-        if (changed || source === 'refresh' || source === 'open')
+        // Also when the row did not change: hovering the row that was
+        // selected on opening must still bring up its preview.
+        if (changed || source === 'refresh' || source === 'open' || !this._preview.visible)
             this._schedulePreview(source);
     }
 
@@ -669,6 +745,10 @@ class ClipboardButton extends PanelMenu.Button {
         const delay = source === 'pointer'
             ? this._settings.get_int('preview-delay-pointer')
             : this._settings.get_int('preview-delay-keyboard');
+        if (delay === 0) {
+            this._showPreview();
+            return;
+        }
         this._previewTimeout = this._later(delay, () => {
             this._previewTimeout = 0;
             this._showPreview();
@@ -694,15 +774,37 @@ class ClipboardButton extends PanelMenu.Button {
 
     _activate(index) {
         const entry = this._entries[index];
-        if (!entry)
+        if (!entry || this._activating)
             return;
-        const paste = this._settings.get_boolean('paste-on-select');
-        this._service.setEntry(entry, () => {
-            if (paste)
-                this._service.paste();
+        this._sounds.play(Sound.SELECT);
+
+        const finish = () => {
+            this._activating = false;
+            const paste = this._settings.get_boolean('paste-on-select');
+            // Close first: the paste must reach the window, not the popup.
+            this.menu.close();
+            this._service.setEntry(entry, () => {
+                if (paste)
+                    this._service.paste();
+            });
+            this._store.use(entry);
+        };
+
+        const row = this._rows[index];
+        if (!row || !this._motion()) {
+            finish();
+            return;
+        }
+        // A short press on the chosen row, then the popup fades out.
+        this._activating = true;
+        row.set_pivot_point(0.5, 0.5);
+        row.ease({
+            scale_x: 0.96,
+            scale_y: 0.96,
+            duration: 70,
+            mode: Clutter.AnimationMode.EASE_OUT_QUAD,
+            onStopped: finish,
         });
-        this._store.use(entry);
-        this.menu.close();
     }
 
     _delete(entry) {
@@ -742,9 +844,58 @@ class ClipboardButton extends PanelMenu.Button {
         }
     }
 
+    /** @returns {boolean} whether Space opens links and files */
+    _openWithSpace() {
+        return this._settings.get_string('open-key') === 'space';
+    }
+
+    _canOpen(entry) {
+        return entry?.kind === Kind.LINK || entry?.kind === Kind.FILE;
+    }
+
+    /**
+     * @param {object} entry history entry
+     * @returns {string|null} the local file behind an entry: a copied file,
+     *   or the file a copied image (e.g. a screenshot) was saved to
+     */
+    _filePath(entry) {
+        let path = null;
+        if (entry.kind === Kind.IMAGE) {
+            path = entry.source ?? null;
+        } else if (entry.kind === Kind.FILE) {
+            const first = entry.text.trim().split('\n')[0].trim();
+            if (first.startsWith('file://'))
+                path = Gio.File.new_for_uri(first).get_path();
+            else if (first.startsWith('/') || first.startsWith('~'))
+                path = first.replace(/^~/, GLib.get_home_dir());
+        }
+        return path && GLib.file_test(path, GLib.FileTest.EXISTS) ? path : null;
+    }
+
+    /** Open the folder that holds a file, with the file selected. */
+    _showInFolder(path) {
+        this.menu.close();
+        const uri = Gio.File.new_for_path(path).get_uri();
+        Gio.DBus.session.call('org.freedesktop.FileManager1', '/org/freedesktop/FileManager1',
+            'org.freedesktop.FileManager1', 'ShowItems', new GLib.Variant('(ass)', [[uri], '']),
+            null, Gio.DBusCallFlags.NONE, -1, null, (conn, res) => {
+                try {
+                    conn.call_finish(res);
+                } catch {
+                    // No file manager implements the interface: open the folder.
+                    try {
+                        const parent = Gio.File.new_for_path(path).get_parent().get_uri();
+                        Gio.AppInfo.launch_default_for_uri(parent, global.create_app_launch_context(0, -1));
+                    } catch (e) {
+                        Main.notifyError(_('Could not open'), e.message);
+                    }
+                }
+            });
+    }
+
     _openLink() {
         const entry = this._entries[this._selected];
-        if (!entry || (entry.kind !== Kind.LINK && entry.kind !== Kind.FILE))
+        if (!this._canOpen(entry))
             return;
         let uri = entry.text.trim().split('\n')[0];
         if (entry.kind === Kind.LINK && !/^[a-z]+:/i.test(uri))
@@ -783,7 +934,7 @@ class ClipboardButton extends PanelMenu.Button {
         case Clutter.KEY_Return:
         case Clutter.KEY_KP_Enter:
         case Clutter.KEY_ISO_Enter:
-            if (ctrl)
+            if (ctrl && !this._openWithSpace())
                 this._openLink();
             else
                 this._activate(this._selected);
@@ -812,6 +963,10 @@ class ClipboardButton extends PanelMenu.Button {
             return Clutter.EVENT_PROPAGATE;
         case Clutter.KEY_space:
             if (emptyQuery && this._rows.length) {
+                if (this._openWithSpace() && this._canOpen(this._entries[this._selected])) {
+                    this._openLink();
+                    return Clutter.EVENT_STOP;
+                }
                 this._clearPreviewTimeout();
                 if (!this._preview.visible)
                     this._showPreview();
@@ -869,7 +1024,10 @@ class ClipboardButton extends PanelMenu.Button {
         for (const id of this._timeouts)
             GLib.source_remove(id);
         this._timeouts.clear();
+        this._previewTimeout = 0;
         this._disconnectKeys?.();
+        this._sounds.destroy();
+        this._sounds = null;
         this._store.disconnectChanged(this._storeChangedId);
         for (const id of this._settingsIds)
             this._settings.disconnect(id);

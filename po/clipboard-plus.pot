@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 12:23+0300\n"
+"POT-Creation-Date: 2026-10-10 14:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: src/extension.js:30
+#: src/extension.js:38
 msgid "Copied"
 msgstr ""
 
-#: src/extension.js:111
+#: src/extension.js:121
 msgid "Clipboard"
 msgstr ""
 
@@ -102,310 +102,350 @@ msgstr ""
 msgid "Toggle Private Mode"
 msgstr ""
 
-#: src/prefs.js:70
-msgid "General"
-msgstr ""
-
-#: src/prefs.js:72
-msgid "Behavior"
-msgstr ""
-
-#: src/prefs.js:73
-msgid "Paste on Select"
-msgstr ""
-
-#: src/prefs.js:74
-msgid "Paste into the active window after choosing an entry"
-msgstr ""
-
-#: src/prefs.js:75
-msgid "Move Used Entries to Top"
-msgstr ""
-
-#: src/prefs.js:76
-msgid "Trim Whitespace"
-msgstr ""
-
-#: src/prefs.js:77
-msgid "Remove spaces and line breaks around copied text"
-msgstr ""
-
-#: src/prefs.js:78
-msgid "History Size"
-msgstr ""
-
-#: src/prefs.js:79
-msgid "Pinned entries do not count"
+#: src/prefs.js:68
+msgid "Volume"
 msgstr ""
 
 #: src/prefs.js:82
-msgid "Feedback"
-msgstr ""
-
-#: src/prefs.js:83
-msgid "Animate Panel Icon"
-msgstr ""
-
-#: src/prefs.js:84
-msgid "A short pulse when something is copied"
-msgstr ""
-
-#: src/prefs.js:85
-msgid "Notification on Copy"
-msgstr ""
-
-#: src/prefs.js:88 src/lib/popup.js:122
-msgid "Search"
-msgstr ""
-
-#: src/prefs.js:89
-msgid "Case Sensitive"
-msgstr ""
-
-#: src/prefs.js:90
-msgid "Regular Expressions"
-msgstr ""
-
-#: src/prefs.js:96
-msgid "Appearance"
-msgstr ""
-
-#: src/prefs.js:99
-msgid "Layout"
+msgid "Play"
 msgstr ""
 
 #: src/prefs.js:100
+msgid "General"
+msgstr ""
+
+#: src/prefs.js:102
+msgid "Behavior"
+msgstr ""
+
+#: src/prefs.js:103
+msgid "Paste on Select"
+msgstr ""
+
+#: src/prefs.js:104
+msgid "Paste into the active window after choosing an entry"
+msgstr ""
+
+#: src/prefs.js:105
+msgid "Move Used Entries to Top"
+msgstr ""
+
+#: src/prefs.js:106
+msgid "Trim Whitespace"
+msgstr ""
+
+#: src/prefs.js:107
+msgid "Remove spaces and line breaks around copied text"
+msgstr ""
+
+#: src/prefs.js:108
+msgid "History Size"
+msgstr ""
+
+#: src/prefs.js:109
+msgid "Pinned entries do not count"
+msgstr ""
+
+#: src/prefs.js:112
+msgid "Feedback"
+msgstr ""
+
+#: src/prefs.js:113
+msgid "Animations"
+msgstr ""
+
+#: src/prefs.js:114
+msgid "Opening the popup, moving the selection and the preview card"
+msgstr ""
+
+#: src/prefs.js:115
+msgid "Animate Panel Icon"
+msgstr ""
+
+#: src/prefs.js:116
+msgid "A short pulse when something is copied"
+msgstr ""
+
+#: src/prefs.js:119
+msgid "Sound Effects"
+msgstr ""
+
+#: src/prefs.js:120
+msgid "When opening the popup and choosing an entry"
+msgstr ""
+
+#: src/prefs.js:121
+msgid "Opening Sound"
+msgstr ""
+
+#: src/prefs.js:121
+msgid "Selection Sound"
+msgstr ""
+
+#: src/prefs.js:129
+msgid "Notification on Copy"
+msgstr ""
+
+#: src/prefs.js:132 src/lib/popup.js:136
+msgid "Search"
+msgstr ""
+
+#: src/prefs.js:133
+msgid "Case Sensitive"
+msgstr ""
+
+#: src/prefs.js:134
+msgid "Regular Expressions"
+msgstr ""
+
+#: src/prefs.js:140
+msgid "Appearance"
+msgstr ""
+
+#: src/prefs.js:143
+msgid "Layout"
+msgstr ""
+
+#: src/prefs.js:144
 msgid "How the clipboard popup looks"
 msgstr ""
 
-#: src/prefs.js:151
+#: src/prefs.js:195
 msgid "Details"
 msgstr ""
 
-#: src/prefs.js:152
+#: src/prefs.js:196
 msgid "Show Time"
 msgstr ""
 
-#: src/prefs.js:153
+#: src/prefs.js:197
 msgid "How long ago each entry was copied"
 msgstr ""
 
-#: src/prefs.js:157
+#: src/prefs.js:201
 msgid "Preview Card"
 msgstr ""
 
-#: src/prefs.js:158
+#: src/prefs.js:202
 msgid "A large preview of the selected entry next to the popup"
 msgstr ""
 
-#: src/prefs.js:160
+#: src/prefs.js:204
 msgid "Show Preview Card"
 msgstr ""
 
-#: src/prefs.js:161
+#: src/prefs.js:205
 msgid "Delay with Mouse"
 msgstr ""
 
-#: src/prefs.js:161 src/prefs.js:162
+#: src/prefs.js:205 src/prefs.js:206
 msgid "Milliseconds"
 msgstr ""
 
-#: src/prefs.js:162
+#: src/prefs.js:206
 msgid "Delay with Arrow Keys"
 msgstr ""
 
-#: src/prefs.js:172 src/prefs.js:174
+#: src/prefs.js:216 src/prefs.js:218
 msgid "Privacy"
 msgstr ""
 
-#: src/prefs.js:175 src/lib/popup.js:183
+#: src/prefs.js:219 src/lib/popup.js:197
 msgid "Private Mode"
 msgstr ""
 
-#: src/prefs.js:176
+#: src/prefs.js:220
 msgid "Nothing is recorded while this is on"
 msgstr ""
 
-#: src/prefs.js:183 src/prefs.js:270
+#: src/prefs.js:227 src/prefs.js:314
 msgid "Add Application"
 msgstr ""
 
-#: src/prefs.js:187
+#: src/prefs.js:231
 msgid "Excluded Applications"
 msgstr ""
 
-#: src/prefs.js:188
+#: src/prefs.js:232
 msgid ""
 "Copies made in these apps are never recorded. Password managers are excluded "
 "by default."
 msgstr ""
 
-#: src/prefs.js:207
+#: src/prefs.js:251
 msgid "Remove"
 msgstr ""
 
-#: src/prefs.js:216
+#: src/prefs.js:260
 msgid "No excluded applications"
 msgstr ""
 
-#: src/prefs.js:230
+#: src/prefs.js:274
 msgid "Storage"
 msgstr ""
 
-#: src/prefs.js:231
+#: src/prefs.js:275
 msgid "Remember History"
 msgstr ""
 
-#: src/prefs.js:232
+#: src/prefs.js:276
 msgid "Keep entries after logging out or restarting"
 msgstr ""
 
-#: src/prefs.js:233
+#: src/prefs.js:277
 msgid "Remember Only Pinned Entries"
 msgstr ""
 
-#: src/prefs.js:236
+#: src/prefs.js:280
 msgid "Record Images"
 msgstr ""
 
-#: src/prefs.js:237
+#: src/prefs.js:281
 msgid "Largest Image"
 msgstr ""
 
-#: src/prefs.js:237
+#: src/prefs.js:281
 msgid "Megabytes"
 msgstr ""
 
-#: src/prefs.js:242
+#: src/prefs.js:286
 msgid "Automatic Cleanup"
 msgstr ""
 
-#: src/prefs.js:242
+#: src/prefs.js:286
 msgid "Pinned entries are always kept"
 msgstr ""
 
-#: src/prefs.js:243
+#: src/prefs.js:287
 msgid "Clear After Restart"
 msgstr ""
 
-#: src/prefs.js:247 src/lib/popup.js:193
+#: src/prefs.js:291 src/lib/popup.js:212
 msgid "Clear History"
 msgstr ""
 
-#: src/prefs.js:264
+#: src/prefs.js:308
 msgid "Ask Before Clearing"
 msgstr ""
 
-#: src/prefs.js:274
+#: src/prefs.js:318
 msgid "Search applications"
 msgstr ""
 
-#: src/prefs.js:303
+#: src/prefs.js:347
 msgid "Shortcuts"
 msgstr ""
 
-#: src/prefs.js:305
+#: src/prefs.js:349
 msgid "Global Shortcuts"
 msgstr ""
 
-#: src/prefs.js:306
+#: src/prefs.js:350
 msgid "Enable Shortcuts"
 msgstr ""
 
-#: src/prefs.js:313
+#: src/prefs.js:357
 msgid "Disabled"
 msgstr ""
 
-#: src/prefs.js:332
+#: src/prefs.js:376
 msgid "Inside the Popup"
 msgstr ""
 
-#: src/prefs.js:334
+#: src/prefs.js:377 src/lib/preview.js:217 src/lib/preview.js:226
+msgid "Space"
+msgstr ""
+
+#: src/prefs.js:377 src/lib/preview.js:217
+msgid "Ctrl+Enter"
+msgstr ""
+
+#: src/prefs.js:382
+msgid "Open Links and Files With"
+msgstr ""
+
+#: src/prefs.js:383
+msgid "Space enlarges everything else"
+msgstr ""
+
+#: src/prefs.js:401
 msgid "Move selection — the preview card follows"
 msgstr ""
 
-#: src/prefs.js:335
+#: src/prefs.js:402
 msgid "Copy (and paste, if enabled)"
 msgstr ""
 
-#: src/prefs.js:336
-msgid "Open link or file"
-msgstr ""
-
-#: src/prefs.js:337
+#: src/prefs.js:403
 msgid "Type"
 msgstr ""
 
-#: src/prefs.js:337
+#: src/prefs.js:403
 msgid "Search instantly"
 msgstr ""
 
-#: src/prefs.js:338
+#: src/prefs.js:404
 msgid "Apply the suggested filter"
 msgstr ""
 
-#: src/prefs.js:339
-msgid "Enlarge preview"
-msgstr ""
-
-#: src/prefs.js:340
+#: src/prefs.js:405
 msgid "Pin / unpin"
 msgstr ""
 
-#: src/prefs.js:341
+#: src/prefs.js:406
 msgid "Edit text"
 msgstr ""
 
-#: src/prefs.js:342
+#: src/prefs.js:407
 msgid "Add a tag"
 msgstr ""
 
-#: src/prefs.js:343
+#: src/prefs.js:408
 msgid "Delete entry"
 msgstr ""
 
-#: src/prefs.js:344
+#: src/prefs.js:409
 msgid "Copy entry 1–9"
 msgstr ""
 
-#: src/prefs.js:345
+#: src/prefs.js:410
 msgid "Clear search, then close"
 msgstr ""
 
-#: src/prefs.js:365
+#: src/prefs.js:430
 msgid "Press a Shortcut"
 msgstr ""
 
-#: src/prefs.js:366
+#: src/prefs.js:431
 msgid "Esc to cancel · Backspace to disable"
 msgstr ""
 
-#: src/prefs.js:400
+#: src/prefs.js:465
 msgid "About"
 msgstr ""
 
-#: src/prefs.js:413
+#: src/prefs.js:478
 #, javascript-format
 msgid "Version %s"
 msgstr ""
 
-#: src/prefs.js:416
+#: src/prefs.js:481
 msgid "Made by Dukha"
 msgstr ""
 
-#: src/prefs.js:425
+#: src/prefs.js:490
 msgid "Website and Source Code"
 msgstr ""
 
-#: src/prefs.js:425
+#: src/prefs.js:490
 msgid "Report a Problem"
 msgstr ""
 
-#: src/prefs.js:434
+#: src/prefs.js:499
 msgid "Battery Friendly"
 msgstr ""
 
-#: src/prefs.js:435
+#: src/prefs.js:500
 msgid ""
 "Clipboard+ never polls. It only wakes up when the clipboard changes, builds "
 "its list only when you open it, and writes to disk at most once every two "
@@ -436,147 +476,155 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: src/lib/popup.js:28
+#: src/lib/popup.js:32
 msgid "Images"
 msgstr ""
 
-#: src/lib/popup.js:29
+#: src/lib/popup.js:33
 msgid "Links"
 msgstr ""
 
-#: src/lib/popup.js:30
+#: src/lib/popup.js:34
 msgid "Code"
 msgstr ""
 
-#: src/lib/popup.js:31
+#: src/lib/popup.js:35
 msgid "Colors"
 msgstr ""
 
-#: src/lib/popup.js:32
+#: src/lib/popup.js:36
 msgctxt "filter"
 msgid "Pinned"
 msgstr ""
 
-#: src/lib/popup.js:33
+#: src/lib/popup.js:37
 msgid "Files"
 msgstr ""
 
-#: src/lib/popup.js:34
+#: src/lib/popup.js:38
 msgid "Text"
 msgstr ""
 
-#: src/lib/popup.js:195
+#: src/lib/popup.js:214
 msgid "Settings"
 msgstr ""
 
-#: src/lib/popup.js:351
+#: src/lib/popup.js:416
 #, javascript-format
 msgid "Press Tab to filter by %s"
 msgstr ""
 
-#: src/lib/popup.js:444
+#: src/lib/popup.js:509
 msgid "Pinned"
 msgstr ""
 
-#: src/lib/popup.js:446
+#: src/lib/popup.js:511
 msgid "History"
 msgstr ""
 
-#: src/lib/popup.js:466
+#: src/lib/popup.js:531
 msgid "Nothing copied yet"
 msgstr ""
 
-#: src/lib/popup.js:466
+#: src/lib/popup.js:531
 msgid "No results"
 msgstr ""
 
-#: src/lib/popup.js:469
+#: src/lib/popup.js:534
 msgid "Private Mode is on — copies are not recorded"
 msgstr ""
 
-#: src/lib/popup.js:470
+#: src/lib/popup.js:535
 msgid "Copied text and images will appear here"
 msgstr ""
 
-#: src/lib/popup.js:471
+#: src/lib/popup.js:536
 msgid "Try a different search or filter"
 msgstr ""
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:598
+msgid "Show in Folder"
+msgstr ""
+
+#: src/lib/popup.js:601
 msgid "Unpin"
 msgstr ""
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:601
 msgid "Pin"
 msgstr ""
 
-#: src/lib/popup.js:536
+#: src/lib/popup.js:606
 msgid "Delete"
 msgstr ""
 
-#: src/lib/popup.js:736
+#: src/lib/popup.js:838
 msgid "Clear clipboard history?"
 msgstr ""
 
-#: src/lib/popup.js:737
+#: src/lib/popup.js:839
 msgid "All entries except pinned ones will be deleted. This cannot be undone."
 msgstr ""
 
-#: src/lib/popup.js:738
+#: src/lib/popup.js:840
 msgid "Clear"
 msgstr ""
 
-#: src/lib/popup.js:757
+#: src/lib/popup.js:890 src/lib/popup.js:908
 msgid "Could not open"
 msgstr ""
 
-#: src/lib/preview.js:176 src/lib/util.js:39
+#: src/lib/preview.js:217
+msgid "Open"
+msgstr ""
+
+#: src/lib/preview.js:222 src/lib/util.js:39
 msgid "now"
 msgstr ""
 
-#: src/lib/preview.js:176
+#: src/lib/preview.js:222
 #, javascript-format
 msgid "%s ago"
 msgstr ""
 
-#: src/lib/preview.js:180
-msgid "Esc  Close"
+#: src/lib/preview.js:226
+msgid "Esc"
 msgstr ""
 
-#: src/lib/preview.js:180
-msgid "Space  Enlarge"
+#: src/lib/preview.js:226
+msgid "Close"
 msgstr ""
 
-#: src/lib/preview.js:196 src/lib/util.js:63
+#: src/lib/preview.js:226
+msgid "Enlarge"
+msgstr ""
+
+#: src/lib/preview.js:242 src/lib/util.js:63
 msgid "Image"
 msgstr ""
 
-#: src/lib/preview.js:249
+#: src/lib/preview.js:295
 #, javascript-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/lib/preview.js:251
+#: src/lib/preview.js:297
 #, javascript-format
 msgid "%d character"
 msgid_plural "%d characters"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/lib/preview.js:253
+#: src/lib/preview.js:299
 #, javascript-format
 msgid "%d line"
 msgid_plural "%d lines"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/lib/preview.js:255 src/lib/preview.js:277
-msgid "Ctrl+Enter  Open"
-msgstr ""
-
-#: src/lib/preview.js:268
+#: src/lib/preview.js:314
 msgid "Link"
 msgstr ""
 

@@ -25,11 +25,11 @@ const CLEAR_INTERVALS = [
 ];
 
 const SHORTCUTS = [
-    ['toggle-menu', () => _('Open clipboard')],
-    ['next-entry', () => _('Copy older entry')],
-    ['prev-entry', () => _('Copy newer entry')],
-    ['clear-history', () => _('Clear history')],
-    ['toggle-private-mode', () => _('Toggle Private Mode')],
+    ['clipboard-plus-toggle-menu', () => _('Open clipboard')],
+    ['clipboard-plus-next-entry', () => _('Copy older entry')],
+    ['clipboard-plus-prev-entry', () => _('Copy newer entry')],
+    ['clipboard-plus-clear-history', () => _('Clear history')],
+    ['clipboard-plus-toggle-private-mode', () => _('Toggle Private Mode')],
 ];
 
 export default class ClipboardPlusPreferences extends ExtensionPreferences {
@@ -64,6 +64,36 @@ export default class ClipboardPlusPreferences extends ExtensionPreferences {
         return row;
     }
 
+    _volumeRow(settings) {
+        const row = new Adw.ActionRow({title: _('Volume')});
+        const scale = new Gtk.Scale({
+            adjustment: new Gtk.Adjustment({lower: 0, upper: 100, step_increment: 5, page_increment: 10}),
+            draw_value: false,
+            hexpand: true,
+            width_request: 180,
+            valign: Gtk.Align.CENTER,
+        });
+        settings.bind('sound-volume', scale.adjustment, 'value', Gio.SettingsBindFlags.DEFAULT);
+        row.add_suffix(scale);
+
+        const test = new Gtk.Button({
+            icon_name: 'media-playback-start-symbolic',
+            valign: Gtk.Align.CENTER,
+            tooltip_text: _('Play'),
+        });
+        test.add_css_class('flat');
+        let media = null;
+        test.connect('clicked', () => {
+            // Same curve as the extension (see lib/sounds.js).
+            const v = settings.get_int('sound-volume') / 100;
+            media = Gtk.MediaFile.new_for_filename(GLib.build_filenamev([this.path, 'sounds', 'select.wav']));
+            media.volume = v * v;
+            media.play();
+        });
+        row.add_suffix(test);
+        return row;
+    }
+
     // ------------------------------------------------------------ pages
 
     _generalPage(settings) {
@@ -80,8 +110,22 @@ export default class ClipboardPlusPreferences extends ExtensionPreferences {
         page.add(behavior);
 
         const feedback = new Adw.PreferencesGroup({title: _('Feedback')});
-        feedback.add(this._switch(settings, 'blink-icon', _('Animate Panel Icon'),
-            _('A short pulse when something is copied')));
+        feedback.add(this._switch(settings, 'enable-animations', _('Animations'),
+            _('Opening the popup, moving the selection and the preview card')));
+        const blink = this._switch(settings, 'blink-icon', _('Animate Panel Icon'),
+            _('A short pulse when something is copied'));
+        settings.bind('enable-animations', blink, 'sensitive', Gio.SettingsBindFlags.GET);
+        feedback.add(blink);
+        feedback.add(this._switch(settings, 'enable-sounds', _('Sound Effects'),
+            _('When opening the popup and choosing an entry')));
+        for (const [key, title] of [['sound-open', _('Opening Sound')], ['sound-select', _('Selection Sound')]]) {
+            const row = this._switch(settings, key, title);
+            settings.bind('enable-sounds', row, 'sensitive', Gio.SettingsBindFlags.GET);
+            feedback.add(row);
+        }
+        const volume = this._volumeRow(settings);
+        settings.bind('enable-sounds', volume, 'sensitive', Gio.SettingsBindFlags.GET);
+        feedback.add(volume);
         feedback.add(this._switch(settings, 'notify-on-copy', _('Notification on Copy')));
         page.add(feedback);
 
@@ -330,13 +374,34 @@ export default class ClipboardPlusPreferences extends ExtensionPreferences {
         page.add(global);
 
         const inside = new Adw.PreferencesGroup({title: _('Inside the Popup')});
+        const openKeys = [['space', _('Space')], ['ctrl-enter', _('Ctrl+Enter')]];
+        const openModel = new Gtk.StringList();
+        for (const [, label] of openKeys)
+            openModel.append(label);
+        const openCombo = new Adw.ComboRow({
+            title: _('Open Links and Files With'),
+            subtitle: _('Space enlarges everything else'),
+            model: openModel,
+        });
+        const syncOpen = () => {
+            const i = Math.max(0, openKeys.findIndex(([id]) => id === settings.get_string('open-key')));
+            if (openCombo.selected !== i)
+                openCombo.selected = i;
+        };
+        syncOpen();
+        openCombo.connect('notify::selected', () => {
+            const id = openKeys[openCombo.selected]?.[0] ?? 'space';
+            if (settings.get_string('open-key') !== id)
+                settings.set_string('open-key', id);
+        });
+        settings.connect('changed::open-key', syncOpen);
+        inside.add(openCombo);
+
         const keys = [
             ['↑ ↓', _('Move selection — the preview card follows')],
             ['Enter', _('Copy (and paste, if enabled)')],
-            ['Ctrl+Enter', _('Open link or file')],
             [_('Type'), _('Search instantly')],
             ['Tab', _('Apply the suggested filter')],
-            ['Space', _('Enlarge preview')],
             ['Ctrl+P', _('Pin / unpin')],
             ['Ctrl+E', _('Edit text')],
             ['Ctrl+T', _('Add a tag')],

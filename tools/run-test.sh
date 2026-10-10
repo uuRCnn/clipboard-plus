@@ -22,6 +22,10 @@ fi
 
 # sample image for the image tests
 python3 "$ROOT/tools/sample-image.py" "$TMP/sample.png"
+# the sample image also "saved" as a screenshot, to find its folder
+mkdir -p "$TMP/pictures/Screenshots"
+echo "XDG_PICTURES_DIR=\"$TMP/pictures\"" > "$TMP/config/user-dirs.dirs"
+export CBP_TEST_SCREENSHOT="$TMP/pictures/Screenshots/Screenshot.png"
 
 # preferences harness copy (prefs.js with its shell import replaced by a shim)
 PD="$TMP/prefs"
@@ -43,6 +47,10 @@ export CBP_TEST_QUERY="${CBP_TEST_QUERY:-}"
 export LANG="${CBP_LANG:-en_US.UTF-8}"
 export LANGUAGE="${CBP_LANGUAGE:-}"
 unset DISPLAY WAYLAND_DISPLAY DBUS_SESSION_BUS_ADDRESS
+# CBP_PULSE_SERVER: send the sounds to this audio server (sound test)
+[ -n "${CBP_PULSE_SERVER:-}" ] && export PULSE_SERVER="$CBP_PULSE_SERVER"
+[ -n "${CBP_PULSE_SINK:-}" ] && export PULSE_SINK="$CBP_PULSE_SINK"
+
 
 timeout 180 dbus-run-session -- gnome-shell --headless --wayland --no-x11 \
     --wayland-display=cbp-test-0 --virtual-monitor 1600x1000 \

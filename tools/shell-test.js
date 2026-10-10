@@ -78,8 +78,12 @@ async function test() {
     await copyText('Merhaba, ekteki dosyayı inceleyebilir misiniz? Yarın sabah toplantıdan önce dönüş yaparsanız sevinirim.');
     await copyText('file:///home/uur/Belgeler/fatura-ekim.pdf');
     await copyText('#5E5CE6');
-    if (SAMPLE_IMAGE)
+    if (SAMPLE_IMAGE) {
+        // a screenshot tool saves the file and copies the image
+        Gio.File.new_for_path(SAMPLE_IMAGE).copy(Gio.File.new_for_path(GLib.getenv('CBP_TEST_SCREENSHOT')),
+            Gio.FileCopyFlags.OVERWRITE, null, null);
         await copyImage(SAMPLE_IMAGE);
+    }
     await copyText('sudo pacman -Syu --noconfirm');
     await copyText('https://extensions.gnome.org/extension/779/clipboard-indicator/');
     await copyText("Toplantı notları: Perşembe 15:00'te sunum provası.\nHerkes kendi bölümünü 10 dakikada bitirecek şekilde hazırlasın.\nSlaytlar Çarşamba akşamına kadar ortak klasöre yüklensin.\n\n— Projektör ve HDMI adaptörü: Ahmet\n— Toplantı odası: B-204");
@@ -94,6 +98,24 @@ async function test() {
     const link = store.items.find(e => e.kind === 'link');
     store.togglePin(notes);
     store.togglePin(link);
+
+    if (ONLY === 'sound') {
+        // open (shortcut or click), choose an entry; with pauses longer
+        // than the time the sound players are kept
+        const steps = [['key', 1000, 1500], ['click', 300, 17000], ['key', 17000, 1500], ['click', 1000, 1500]];
+        for (const [how, beforeSelect, after] of steps) {
+            if (how === 'key')
+                button.toggleFromShortcut();
+            else
+                button.menu.open();
+            log(`sound open (${how}) ${Date.now()}`);
+            await sleep(beforeSelect);
+            button._activate(0);
+            log(`sound select ${Date.now()}`);
+            await sleep(after);
+        }
+        return;
+    }
 
     if (ONLY === 'prefs') {
         Main.overview.hide();
@@ -125,6 +147,20 @@ async function test() {
         await shot(`11-${layout}-preview-image`);
 
         if (layout === 'default') {
+            await sleep(1500);
+            log(`image source=${store.items.find(e => e.kind === 'image')?.source}`);
+            // hover actions with the folder button on the image row
+            const imgRow = button._rows[imgIndex];
+            const actions = imgRow.get_children().find(c => c.style_class === 'cbp-actions');
+            log(`image row actions=${actions?.get_n_children()}`);
+            imgRow.hover = true;
+            await sleep(200);
+            await shot('16-default-row-actions');
+            imgRow.hover = false;
+            const fileIndex = button._entries.findIndex(e => e.kind === 'file');
+            button._select(fileIndex, 'keyboard');
+            await sleep(450);
+            await shot('17-default-preview-file');
             button._select(0, 'keyboard');
             await sleep(450);
             await shot('12-default-preview-text');

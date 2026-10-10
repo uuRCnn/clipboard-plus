@@ -68,6 +68,17 @@ export function animationsEnabled() {
 }
 
 /**
+ * Arguments for PopupMenu.open() / close() that skip the animation.
+ * GNOME 51 takes `{animate}`, older versions a BoxPointer.PopupAnimation.
+ *
+ * @param {PopupMenu.PopupMenu} menu the menu
+ * @returns {object|number}
+ */
+export function noPopupAnimation(menu) {
+    return menu._getPopupAnimationFromParams ? {animate: false} : 0;
+}
+
+/**
  * Scroll `scrollView` so that `actor` is visible.
  *
  * @param {St.ScrollView} scrollView the scroll view

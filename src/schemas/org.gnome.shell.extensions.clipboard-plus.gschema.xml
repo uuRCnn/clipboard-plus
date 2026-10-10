@@ -7,6 +7,11 @@
     <value nick="compact" value="3"/>
   </enum>
 
+  <enum id="org.gnome.shell.extensions.clipboard-plus.open-key">
+    <value nick="space" value="0"/>
+    <value nick="ctrl-enter" value="1"/>
+  </enum>
+
   <schema id="org.gnome.shell.extensions.clipboard-plus" path="/org/gnome/shell/extensions/clipboard-plus/">
     <!-- Behaviour -->
     <key name="history-size" type="i">
@@ -15,7 +20,7 @@
       <summary>Maximum number of unpinned entries</summary>
     </key>
     <key name="paste-on-select" type="b">
-      <default>false</default>
+      <default>true</default>
       <summary>Paste the entry into the focused window after selecting it</summary>
     </key>
     <key name="move-to-top" type="b">
@@ -58,13 +63,36 @@
     </key>
     <key name="preview-delay-pointer" type="i">
       <range min="0" max="2000"/>
-      <default>400</default>
+      <default>0</default>
       <summary>Preview delay when hovering with the pointer (ms)</summary>
     </key>
     <key name="preview-delay-keyboard" type="i">
       <range min="0" max="2000"/>
-      <default>200</default>
+      <default>0</default>
       <summary>Preview delay when navigating with the keyboard (ms)</summary>
+    </key>
+
+    <!-- Motion & sound -->
+    <key name="enable-animations" type="b">
+      <default>true</default>
+      <summary>Animate the popup, the selection and the preview card</summary>
+    </key>
+    <key name="enable-sounds" type="b">
+      <default>true</default>
+      <summary>Play short sounds when opening the popup and choosing an entry</summary>
+    </key>
+    <key name="sound-open" type="b">
+      <default>true</default>
+      <summary>Play a sound when the popup opens</summary>
+    </key>
+    <key name="sound-select" type="b">
+      <default>true</default>
+      <summary>Play a sound when an entry is chosen</summary>
+    </key>
+    <key name="sound-volume" type="i">
+      <range min="0" max="100"/>
+      <default>60</default>
+      <summary>Sound effect volume (%)</summary>
     </key>
 
     <!-- Privacy & storage -->
@@ -115,28 +143,34 @@
       <summary>Ask before clearing the history</summary>
     </key>
 
-    <!-- Keyboard shortcuts -->
+    <!-- Keyboard shortcuts. The key names are also the names of the
+         global keybindings, which are shared by every extension, so they
+         carry a prefix (other clipboard extensions use "toggle-menu"). -->
+    <key name="open-key" enum="org.gnome.shell.extensions.clipboard-plus.open-key">
+      <default>'space'</default>
+      <summary>Key that opens links and files in the popup (Space also enlarges the preview of other entries)</summary>
+    </key>
     <key name="enable-keybindings" type="b">
       <default>true</default>
       <summary>Enable global keyboard shortcuts</summary>
     </key>
-    <key name="toggle-menu" type="as">
-      <default><![CDATA[['<Super><Shift>v']]]></default>
+    <key name="clipboard-plus-toggle-menu" type="as">
+      <default><![CDATA[['<Alt>c']]]></default>
       <summary>Open / close the clipboard popup</summary>
     </key>
-    <key name="next-entry" type="as">
+    <key name="clipboard-plus-next-entry" type="as">
       <default><![CDATA[[]]]></default>
       <summary>Copy the next (older) entry</summary>
     </key>
-    <key name="prev-entry" type="as">
+    <key name="clipboard-plus-prev-entry" type="as">
       <default><![CDATA[[]]]></default>
       <summary>Copy the previous (newer) entry</summary>
     </key>
-    <key name="clear-history" type="as">
+    <key name="clipboard-plus-clear-history" type="as">
       <default><![CDATA[[]]]></default>
       <summary>Clear history</summary>
     </key>
-    <key name="toggle-private-mode" type="as">
+    <key name="clipboard-plus-toggle-private-mode" type="as">
       <default><![CDATA[[]]]></default>
       <summary>Toggle private mode</summary>
     </key>

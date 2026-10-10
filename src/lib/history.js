@@ -12,6 +12,11 @@ const FILE_VERSION = 1;
 const THUMB = 96;
 const PREVIEW_W = 1200;
 const PREVIEW_H = 900;
+// Screenshot tools copy the image and save it to a file at about the same
+// time; the saved file is looked for a few times while it is written.
+const SOURCE_LOOKUPS_MS = [400, 1500, 4000];
+const SOURCE_MAX_AGE_SECONDS = 30;
+const FILE_ATTRS = 'standard::name,standard::type,standard::size,time::modified';
 
 const decoder = new TextDecoder();
 const encoder = new TextEncoder();
@@ -33,6 +38,7 @@ const encoder = new TextEncoder();
  * @property {number} [width]
  * @property {number} [height]
  * @property {number} [size]
+ * @property {string} [source] file the image was saved to (e.g. a screenshot)
  */
 
 export class HistoryStore {
@@ -49,6 +55,7 @@ export class HistoryStore {
         this._saveId = 0;
         this._listeners = new Set();
         this._cancellable = new Gio.Cancellable();
+        this._sourceIds = new Set();
     }
 
     get imageDir() {
@@ -167,6 +174,9 @@ export class HistoryStore {
     /** Write pending changes immediately and stop all I/O. */
     destroy() {
         this._cancellable.cancel();
+        for (const id of this._sourceIds)
+            GLib.source_remove(id);
+        this._sourceIds.clear();
         if (this._saveId) {
             GLib.source_remove(this._saveId);
             this._saveId = 0;
@@ -277,8 +287,97 @@ export class HistoryStore {
                     this._trim();
                     this._emitChanged();
                     callback?.(entry);
+                    this._lookForSource(entry);
                 });
             });
+    }
+
+    /**
+     * Find the file a copied image was also saved to, such as a screenshot,
+     * so its folder can be opened. Only recent files in the Pictures folder
+     * and its direct subfolders whose size and checksum match are taken.
+     *
+     * @param {Entry} entry image entry
+     */
+    _lookForSource(entry) {
+        const pictures = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_PICTURES);
+        if (!pictures)
+            return;
+        for (const delay of SOURCE_LOOKUPS_MS) {
+            const id = GLib.timeout_add(GLib.PRIORITY_LOW, delay, () => {
+                this._sourceIds.delete(id);
+                if (!entry.source && this.items.includes(entry))
+                    this._findSource(entry, pictures).catch(() => {});
+                return GLib.SOURCE_REMOVE;
+            });
+            this._sourceIds.add(id);
+        }
+    }
+
+    async _findSource(entry, pictures) {
+        const since = Date.now() / 1000 - SOURCE_MAX_AGE_SECONDS;
+        const top = await this._listDir(pictures);
+        const dirs = [pictures, ...top
+            .filter(i => i.get_file_type() === Gio.FileType.DIRECTORY)
+            .map(i => GLib.build_filenamev([pictures, i.get_name()]))];
+        for (const dir of dirs) {
+            const infos = dir === pictures ? top : await this._listDir(dir);
+            for (const info of infos) {
+                if (info.get_file_type() !== Gio.FileType.REGULAR || info.get_size() !== entry.size ||
+                    (info.get_modification_date_time()?.to_unix() ?? 0) < since)
+                    continue;
+                const path = GLib.build_filenamev([dir, info.get_name()]);
+                const bytes = await this._load(path);
+                if (entry.source || !bytes ||
+                    GLib.compute_checksum_for_bytes(GLib.ChecksumType.SHA1, bytes) !== entry.hash)
+                    continue;
+                entry.source = path;
+                this._emitChanged();
+                return;
+            }
+        }
+    }
+
+    _listDir(path) {
+        return new Promise(resolve => {
+            Gio.File.new_for_path(path).enumerate_children_async(FILE_ATTRS, Gio.FileQueryInfoFlags.NONE,
+                GLib.PRIORITY_LOW, this._cancellable, (dir, res) => {
+                    let enumerator;
+                    try {
+                        enumerator = dir.enumerate_children_finish(res);
+                    } catch {
+                        resolve([]);
+                        return;
+                    }
+                    const all = [];
+                    const next = () => enumerator.next_files_async(100, GLib.PRIORITY_LOW, this._cancellable, (e, r) => {
+                        let infos = [];
+                        try {
+                            infos = e.next_files_finish(r);
+                        } catch {}
+                        if (!infos.length) {
+                            enumerator.close_async(GLib.PRIORITY_LOW, null, null);
+                            resolve(all);
+                            return;
+                        }
+                        all.push(...infos);
+                        next();
+                    });
+                    next();
+                });
+        });
+    }
+
+    _load(path) {
+        return new Promise(resolve => {
+            Gio.File.new_for_path(path).load_bytes_async(this._cancellable, (f, res) => {
+                try {
+                    resolve(f.load_bytes_finish(res)[0]);
+                } catch {
+                    resolve(null);
+                }
+            });
+        });
     }
 
     /**

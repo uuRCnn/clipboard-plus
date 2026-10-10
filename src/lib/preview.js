@@ -9,16 +9,25 @@ import {gettext as _, ngettext} from 'resource:///org/gnome/shell/extensions/ext
 
 import {Kind, formatSize, parseColor, rgbToHex, rgbToHslString, splitUrl} from './kinds.js';
 import {KIND_ICON, makeIcon, relativeTime} from './util.js';
-import {animationsEnabled, vbox} from './compat.js';
+import {vbox} from './compat.js';
 
 const GAP = 12;
 const MARGIN = 12;
-const FADE_MS = 120;
+const FADE_MS = 140;
+const SLIDE_PX = 10;
+const FOLLOW_MS = 110;
 
 export class PreviewCard {
-    constructor(store, path) {
+    /**
+     * @param {object} store history store
+     * @param {string} path extension path
+     * @param {Function} motion returns whether to animate
+     */
+    constructor(store, path, motion, settings) {
         this._store = store;
+        this._settings = settings;
         this._path = path;
+        this._motion = motion;
         this._entry = null;
         this._menuBox = null;
         this._row = null;
@@ -46,34 +55,45 @@ export class PreviewCard {
      * @param {Clutter.Actor} row the row of the entry
      */
     show(entry, menuBox, row) {
-        const wasVisible = this._actor.visible;
+        const a = this._actor;
+        const wasVisible = a.visible;
+        const animate = this._motion();
         this._entry = entry;
         this._menuBox = menuBox;
         this._row = row;
         this._build();
-        this._position();
+        // While visible, glide to the new row instead of jumping.
+        this._position(wasVisible && animate);
 
-        Main.layoutManager.uiGroup.set_child_above_sibling(this._actor, null);
-        if (!wasVisible) {
-            this._actor.opacity = animationsEnabled() ? 0 : 255;
-            this._actor.show();
-            if (animationsEnabled()) {
-                this._actor.ease({
-                    opacity: 255,
-                    duration: FADE_MS,
-                    mode: Clutter.AnimationMode.EASE_OUT_QUAD,
-                });
-            }
-        }
+        Main.layoutManager.uiGroup.set_child_above_sibling(a, null);
+        if (wasVisible)
+            return;
+        a.remove_all_transitions();
+        a.set({opacity: 255, translation_x: 0, scale_x: 1, scale_y: 1});
+        a.show();
+        if (!animate)
+            return;
+        // Fade in while sliding out from under the popup.
+        const [mx] = this._menuBox?.get_transformed_position() ?? [a.x];
+        a.opacity = 0;
+        a.translation_x = mx > a.x ? SLIDE_PX : -SLIDE_PX;
+        a.ease({
+            opacity: 255,
+            translation_x: 0,
+            duration: FADE_MS,
+            mode: Clutter.AnimationMode.EASE_OUT_QUAD,
+        });
     }
 
     hide() {
         this.large = false;
         this._entry = null;
         this._row = null;
-        this._actor.remove_all_transitions();
-        this._actor.hide();
-        this._actor.destroy_all_children();
+        const a = this._actor;
+        a.remove_all_transitions();
+        a.hide();
+        a.set({opacity: 255, translation_x: 0, scale_x: 1, scale_y: 1});
+        a.destroy_all_children();
     }
 
     toggleLarge() {
@@ -82,6 +102,19 @@ export class PreviewCard {
         this.large = !this.large;
         this._build();
         this._position();
+        if (!this._motion())
+            return;
+        const a = this._actor;
+        a.set_pivot_point(0.5, 0.5);
+        a.scale_x = a.scale_y = 0.96;
+        a.opacity = 200;
+        a.ease({
+            scale_x: 1,
+            scale_y: 1,
+            opacity: 255,
+            duration: FADE_MS,
+            mode: Clutter.AnimationMode.EASE_OUT_QUAD,
+        });
     }
 
     destroy() {
@@ -161,14 +194,27 @@ export class PreviewCard {
             x_expand: true,
             y_align: Clutter.ActorAlign.CENTER,
         }));
-        if (hint) {
-            box.add_child(new St.Label({
-                text: hint,
-                style_class: 'cbp-preview-hint',
-                y_align: Clutter.ActorAlign.CENTER,
-            }));
-        }
+        if (hint)
+            box.add_child(this._hint(hint));
         return box;
+    }
+
+    /**
+     * A key hint: the key drawn as a small keycap, so it stands apart from
+     * the text around it, followed by what it does.
+     *
+     * @param {{key: string, label: string}} hint key name and action
+     */
+    _hint({key, label}) {
+        const box = new St.BoxLayout({style_class: 'cbp-preview-hint', y_align: Clutter.ActorAlign.CENTER});
+        box.add_child(new St.Label({text: key, style_class: 'cbp-key', y_align: Clutter.ActorAlign.CENTER}));
+        box.add_child(new St.Label({text: label, style_class: 'cbp-preview-hint-label', y_align: Clutter.ActorAlign.CENTER}));
+        return box;
+    }
+
+    _openHint() {
+        const space = this._settings.get_string('open-key') === 'space';
+        return {key: space ? _('Space') : _('Ctrl+Enter'), label: _('Open')};
     }
 
     _when(e) {
@@ -177,7 +223,7 @@ export class PreviewCard {
     }
 
     _enlargeHint() {
-        return this.large ? _('Esc  Close') : _('Space  Enlarge');
+        return this.large ? {key: _('Esc'), label: _('Close')} : {key: _('Space'), label: _('Enlarge')};
     }
 
     _buildImage(e) {
@@ -194,7 +240,7 @@ export class PreviewCard {
 
         const head = new St.BoxLayout({style_class: 'cbp-preview-head', x_expand: true});
         head.add_child(new St.Label({text: e.tag || _('Image'), style_class: 'cbp-preview-title', x_expand: true}));
-        head.add_child(new St.Label({text: this._enlargeHint(), style_class: 'cbp-preview-hint', y_align: Clutter.ActorAlign.CENTER}));
+        head.add_child(this._hint(this._enlargeHint()));
         this._actor.add_child(head);
         this._actor.add_child(this._meta([
             e.width ? `${e.width} × ${e.height}` : null,
@@ -252,7 +298,7 @@ export class PreviewCard {
             if (lineCount > 1)
                 parts.push(ngettext('%d line', '%d lines', lineCount).format(lineCount));
         }
-        const hint = e.kind === Kind.FILE ? _('Ctrl+Enter  Open') : (truncated || this.large ? this._enlargeHint() : null);
+        const hint = e.kind === Kind.FILE ? this._openHint() : (truncated || this.large ? this._enlargeHint() : null);
         this._actor.add_child(this._meta(parts, hint));
     }
 
@@ -274,7 +320,7 @@ export class PreviewCard {
         label.clutter_text.line_wrap_mode = Pango.WrapMode.CHAR;
         label.clutter_text.ellipsize = Pango.EllipsizeMode.NONE;
         this._actor.add_child(label);
-        this._actor.add_child(this._meta([e.app, this._when(e)], _('Ctrl+Enter  Open')));
+        this._actor.add_child(this._meta([e.app, this._when(e)], this._openHint()));
     }
 
     _buildColor(e) {
@@ -303,7 +349,8 @@ export class PreviewCard {
         this._actor.add_child(this._meta([e.tag, e.app, this._when(e)]));
     }
 
-    _position() {
+    /** @param {boolean} [animate] ease to the new position */
+    _position(animate = false) {
         const a = this._actor;
         const mon = this._monitor();
         const width = this._width();
@@ -330,6 +377,14 @@ export class PreviewCard {
             y = Math.max(my, Math.min(y, my + mh - height));
             y = Math.max(mon.y + MARGIN, Math.min(y, mon.y + mon.height - MARGIN - height));
         }
-        a.set_position(Math.round(x), Math.round(y));
+        x = Math.round(x);
+        y = Math.round(y);
+        if (animate && !this.large && Math.abs(a.x - x) < 1) {
+            a.ease({x, y, duration: FOLLOW_MS, mode: Clutter.AnimationMode.EASE_OUT_QUAD});
+        } else {
+            a.remove_transition('x');
+            a.remove_transition('y');
+            a.set_position(x, y);
+        }
     }
 }

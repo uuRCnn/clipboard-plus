@@ -15,6 +15,7 @@ gnome-extensions pack src --force --out-dir=build \
     --extra-source=lib \
     --extra-source=icons \
     --extra-source=media \
+    --extra-source=sounds \
     --extra-source=stylesheet-dark.css \
     --extra-source=stylesheet-light.css \
     --extra-source=../LICENSE

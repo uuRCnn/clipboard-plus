@@ -13,7 +13,15 @@ import {ClipboardService} from './lib/clipboard.js';
 import {ClipboardButton} from './lib/popup.js';
 import {entryTitle} from './lib/util.js';
 
-const KEYBINDINGS = ['toggle-menu', 'next-entry', 'prev-entry', 'clear-history', 'toggle-private-mode'];
+// Keybinding names are global across all extensions, so ours carry a
+// prefix; Clipboard Indicator, for example, also registers "toggle-menu".
+const KEYBINDINGS = [
+    'clipboard-plus-toggle-menu',
+    'clipboard-plus-next-entry',
+    'clipboard-plus-prev-entry',
+    'clipboard-plus-clear-history',
+    'clipboard-plus-toggle-private-mode',
+];
 
 export default class ClipboardPlusExtension extends Extension {
     enable() {
@@ -47,7 +55,7 @@ export default class ClipboardPlusExtension extends Extension {
             this._clearOnBoot();
             this._scheduleClear();
         });
-        this._keybindingsAdded = false;
+        this._keybindings = [];
         this._updateKeybindings();
     }
 
@@ -76,27 +84,29 @@ export default class ClipboardPlusExtension extends Extension {
         if (!this._settings.get_boolean('enable-keybindings'))
             return;
         const handlers = {
-            'toggle-menu': () => this._button.menu.toggle(),
-            'next-entry': () => this._cycle(1),
-            'prev-entry': () => this._cycle(-1),
-            'clear-history': () => this._button.clearHistory(),
-            'toggle-private-mode': () => this._settings.set_boolean('private-mode',
+            'clipboard-plus-toggle-menu': () => this._button.toggleFromShortcut(),
+            'clipboard-plus-next-entry': () => this._cycle(1),
+            'clipboard-plus-prev-entry': () => this._cycle(-1),
+            'clipboard-plus-clear-history': () => this._button.clearHistory(),
+            'clipboard-plus-toggle-private-mode': () => this._settings.set_boolean('private-mode',
                 !this._settings.get_boolean('private-mode')),
         };
         for (const name of KEYBINDINGS) {
-            Main.wm.addKeybinding(name, this._settings, Meta.KeyBindingFlags.IGNORE_AUTOREPEAT,
+            const action = Main.wm.addKeybinding(name, this._settings, Meta.KeyBindingFlags.IGNORE_AUTOREPEAT,
                 Shell.ActionMode.NORMAL | Shell.ActionMode.OVERVIEW | Shell.ActionMode.POPUP,
                 handlers[name]);
+            if (action !== Meta.KeyBindingAction.NONE)
+                this._keybindings.push(name);
+            else
+                console.warn(`Clipboard+: could not register the shortcut "${name}"`);
         }
-        this._keybindingsAdded = true;
     }
 
     _removeKeybindings() {
-        if (!this._keybindingsAdded)
-            return;
-        for (const name of KEYBINDINGS)
+        // Only remove what we added: never another extension's binding.
+        for (const name of this._keybindings)
             Main.wm.removeKeybinding(name);
-        this._keybindingsAdded = false;
+        this._keybindings = [];
     }
 
     /** Copy the next / previous history entry without opening the popup. */
