@@ -13,5 +13,5 @@
   "url": "https://github.com/uuRCnn/clipboard-plus",
   "settings-schema": "org.gnome.shell.extensions.clipboard-plus",
   "gettext-domain": "clipboard-plus",
-  "version-name": "1.3"
+  "version-name": "1.4"
 }

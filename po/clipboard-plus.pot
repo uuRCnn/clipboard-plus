@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 19:41+0300\n"
+"POT-Creation-Date: 2026-10-15 22:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -509,68 +509,68 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: src/lib/popup.js:416
+#: src/lib/popup.js:454
 #, javascript-format
 msgid "Press Tab to filter by %s"
 msgstr ""
 
-#: src/lib/popup.js:509
+#: src/lib/popup.js:547
 msgid "Pinned"
 msgstr ""
 
-#: src/lib/popup.js:511
+#: src/lib/popup.js:549
 msgid "History"
 msgstr ""
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "Nothing copied yet"
 msgstr ""
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "No results"
 msgstr ""
 
-#: src/lib/popup.js:534
+#: src/lib/popup.js:572
 msgid "Private Mode is on — copies are not recorded"
 msgstr ""
 
-#: src/lib/popup.js:535
+#: src/lib/popup.js:573
 msgid "Copied text and images will appear here"
 msgstr ""
 
-#: src/lib/popup.js:536
+#: src/lib/popup.js:574
 msgid "Try a different search or filter"
 msgstr ""
 
-#: src/lib/popup.js:598
+#: src/lib/popup.js:636
 msgid "Show in Folder"
 msgstr ""
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Unpin"
 msgstr ""
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Pin"
 msgstr ""
 
-#: src/lib/popup.js:606
+#: src/lib/popup.js:644
 msgid "Delete"
 msgstr ""
 
-#: src/lib/popup.js:838
+#: src/lib/popup.js:876
 msgid "Clear clipboard history?"
 msgstr ""
 
-#: src/lib/popup.js:839
+#: src/lib/popup.js:877
 msgid "All entries except pinned ones will be deleted. This cannot be undone."
 msgstr ""
 
-#: src/lib/popup.js:840
+#: src/lib/popup.js:878
 msgid "Clear"
 msgstr ""
 
-#: src/lib/popup.js:890 src/lib/popup.js:908
+#: src/lib/popup.js:928 src/lib/popup.js:946
 msgid "Could not open"
 msgstr ""
 

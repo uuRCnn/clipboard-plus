@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 19:41+0300\n"
+"POT-Creation-Date: 2026-10-15 22:50+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
 "Language-Team: Korean\n"
@@ -510,68 +510,68 @@ msgstr "텍스트"
 msgid "Settings"
 msgstr "설정"
 
-#: src/lib/popup.js:416
+#: src/lib/popup.js:454
 #, javascript-format
 msgid "Press Tab to filter by %s"
 msgstr "Tab을 눌러 %s(으)로 필터링"
 
-#: src/lib/popup.js:509
+#: src/lib/popup.js:547
 msgid "Pinned"
 msgstr "고정됨"
 
-#: src/lib/popup.js:511
+#: src/lib/popup.js:549
 msgid "History"
 msgstr "기록"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "Nothing copied yet"
 msgstr "아직 복사한 내용이 없습니다"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "No results"
 msgstr "결과 없음"
 
-#: src/lib/popup.js:534
+#: src/lib/popup.js:572
 msgid "Private Mode is on — copies are not recorded"
 msgstr "개인 모드가 켜져 있습니다 — 복사한 내용이 기록되지 않습니다"
 
-#: src/lib/popup.js:535
+#: src/lib/popup.js:573
 msgid "Copied text and images will appear here"
 msgstr "복사한 텍스트와 이미지가 여기에 나타납니다"
 
-#: src/lib/popup.js:536
+#: src/lib/popup.js:574
 msgid "Try a different search or filter"
 msgstr "다른 검색어나 필터를 사용해 보세요"
 
-#: src/lib/popup.js:598
+#: src/lib/popup.js:636
 msgid "Show in Folder"
 msgstr "폴더에서 보기"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Unpin"
 msgstr "고정 해제"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Pin"
 msgstr "고정"
 
-#: src/lib/popup.js:606
+#: src/lib/popup.js:644
 msgid "Delete"
 msgstr "삭제"
 
-#: src/lib/popup.js:838
+#: src/lib/popup.js:876
 msgid "Clear clipboard history?"
 msgstr "클립보드 기록을 지울까요?"
 
-#: src/lib/popup.js:839
+#: src/lib/popup.js:877
 msgid "All entries except pinned ones will be deleted. This cannot be undone."
 msgstr "고정한 항목을 제외한 모든 항목이 삭제됩니다. 되돌릴 수 없습니다."
 
-#: src/lib/popup.js:840
+#: src/lib/popup.js:878
 msgid "Clear"
 msgstr "지우기"
 
-#: src/lib/popup.js:890 src/lib/popup.js:908
+#: src/lib/popup.js:928 src/lib/popup.js:946
 msgid "Could not open"
 msgstr "열 수 없습니다"
 

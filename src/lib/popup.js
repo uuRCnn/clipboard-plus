@@ -308,8 +308,12 @@ class ClipboardButton extends PanelMenu.Button {
             this.menu.close();
             return;
         }
-        if (!this.mapped || !this.reactive)
+        if (!this.reactive)
             return;
+        // The top bar is hidden while a window is fullscreen. The popup
+        // still opens then, attached to a stand-in at the button's place.
+        if (!this.mapped)
+            this._attachToStandIn();
         this.menu.open();
     }
 
@@ -353,9 +357,43 @@ class ClipboardButton extends PanelMenu.Button {
 
     _onClose() {
         this._clearPreviewTimeout();
+        this._detachFromStandIn();
         this._sounds?.done();
         // Also reached from _onDestroy() when disabled while open.
         this._preview?.hide();
+    }
+
+    _attachToStandIn() {
+        // Position of the button in the (hidden) top bar, from its last
+        // allocation; the top right corner if it was never shown.
+        let x = 0, y = 0;
+        for (let a = this; a && a !== Main.layoutManager.panelBox; a = a.get_parent()) {
+            const box = a.get_allocation_box();
+            x += box.x1;
+            y += box.y1;
+        }
+        const panel = Main.layoutManager.panelBox;
+        const monitor = Main.layoutManager.primaryMonitor;
+        let [width, height] = this.get_size();
+        if (!width || !height) {
+            width = height = 32;
+            x = monitor.x + monitor.width - width - panel.x;
+            y = monitor.y - panel.y;
+        }
+        if (!this._standIn) {
+            // First in the group, so it is laid out before the popup that
+            // reads its position.
+            this._standIn = new St.Widget({opacity: 0, reactive: false});
+            this._standIn.connect('destroy', () => (this._standIn = null));
+            Main.layoutManager.uiGroup.insert_child_at_index(this._standIn, 0);
+        }
+        this._standIn.set_position(panel.x + x, panel.y + y);
+        this._standIn.set_size(width, height);
+        this.menu.sourceActor = this._standIn;
+    }
+
+    _detachFromStandIn() {
+        this.menu.sourceActor = this;
     }
 
     _later(ms, fn) {
@@ -1036,6 +1074,8 @@ class ClipboardButton extends PanelMenu.Button {
         this._interface = null;
         this._preview.destroy();
         this._preview = null;
+        this._standIn?.destroy();
+        this._standIn = null;
         super._onDestroy();
     }
 });

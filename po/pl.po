@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 19:41+0300\n"
+"POT-Creation-Date: 2026-10-15 22:50+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
 "Language-Team: Polish\n"
@@ -512,70 +512,70 @@ msgstr "Tekst"
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: src/lib/popup.js:416
+#: src/lib/popup.js:454
 #, javascript-format
 msgid "Press Tab to filter by %s"
 msgstr "Naciśnij Tab, aby filtrować: %s"
 
-#: src/lib/popup.js:509
+#: src/lib/popup.js:547
 msgid "Pinned"
 msgstr "Przypięte"
 
-#: src/lib/popup.js:511
+#: src/lib/popup.js:549
 msgid "History"
 msgstr "Historia"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "Nothing copied yet"
 msgstr "Jeszcze nic nie skopiowano"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "No results"
 msgstr "Brak wyników"
 
-#: src/lib/popup.js:534
+#: src/lib/popup.js:572
 msgid "Private Mode is on — copies are not recorded"
 msgstr "Tryb prywatny jest włączony — kopie nie są zapisywane"
 
-#: src/lib/popup.js:535
+#: src/lib/popup.js:573
 msgid "Copied text and images will appear here"
 msgstr "Tu pojawią się skopiowane teksty i obrazy"
 
-#: src/lib/popup.js:536
+#: src/lib/popup.js:574
 msgid "Try a different search or filter"
 msgstr "Spróbuj innego wyszukiwania lub filtra"
 
-#: src/lib/popup.js:598
+#: src/lib/popup.js:636
 msgid "Show in Folder"
 msgstr "Pokaż w katalogu"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Unpin"
 msgstr "Odepnij"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Pin"
 msgstr "Przypnij"
 
-#: src/lib/popup.js:606
+#: src/lib/popup.js:644
 msgid "Delete"
 msgstr "Usuń"
 
-#: src/lib/popup.js:838
+#: src/lib/popup.js:876
 msgid "Clear clipboard history?"
 msgstr "Wyczyścić historię schowka?"
 
-#: src/lib/popup.js:839
+#: src/lib/popup.js:877
 msgid "All entries except pinned ones will be deleted. This cannot be undone."
 msgstr ""
 "Wszystkie wpisy poza przypiętymi zostaną usunięte. Tej operacji nie można "
 "cofnąć."
 
-#: src/lib/popup.js:840
+#: src/lib/popup.js:878
 msgid "Clear"
 msgstr "Wyczyść"
 
-#: src/lib/popup.js:890 src/lib/popup.js:908
+#: src/lib/popup.js:928 src/lib/popup.js:946
 msgid "Could not open"
 msgstr "Nie można otworzyć"
 

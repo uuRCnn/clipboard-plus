@@ -57,8 +57,12 @@ async function test() {
     await sleep(800);
 
     Main.extensionManager.enableExtension(UUID);
-    await sleep(1500);
-    const ext = Main.extensionManager.lookup(UUID);
+    // GNOME 51.1 may take a few seconds to load the extension.
+    let ext = null;
+    for (let i = 0; i < 40 && !ext?.stateObj?._button; i++) {
+        await sleep(250);
+        ext = Main.extensionManager.lookup(UUID);
+    }
     log(`extension state=${ext?.state} error=${ext?.error ?? ''}`);
     if (!ext?.stateObj?._button)
         throw new Error(`extension did not start: ${ext?.error}`);
@@ -98,6 +102,24 @@ async function test() {
     const link = store.items.find(e => e.kind === 'link');
     store.togglePin(notes);
     store.togglePin(link);
+
+    if (ONLY === 'fullscreen') {
+        // what the layout manager does while a window is fullscreen
+        Main.layoutManager.panelBox.visible = false;
+        await sleep(300);
+        button.toggleFromShortcut();
+        await sleep(600);
+        log(`fullscreen open=${button.menu.isOpen}`);
+        await shot('50-fullscreen-open');
+        button._select(0, 'keyboard');
+        await sleep(400);
+        await shot('51-fullscreen-preview');
+        button.toggleFromShortcut();
+        await sleep(400);
+        log(`fullscreen closed=${!button.menu.isOpen}`);
+        Main.layoutManager.panelBox.visible = true;
+        return;
+    }
 
     if (ONLY === 'sound') {
         // open (shortcut or click), choose an entry; with pauses longer

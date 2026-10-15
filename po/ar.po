@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 19:41+0300\n"
+"POT-Creation-Date: 2026-10-15 22:50+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
 "Language-Team: Arabic\n"
@@ -510,68 +510,68 @@ msgstr "النص"
 msgid "Settings"
 msgstr "الإعدادات"
 
-#: src/lib/popup.js:416
+#: src/lib/popup.js:454
 #, javascript-format
 msgid "Press Tab to filter by %s"
 msgstr "اضغط Tab للتصفية حسب %s"
 
-#: src/lib/popup.js:509
+#: src/lib/popup.js:547
 msgid "Pinned"
 msgstr "المثبتة"
 
-#: src/lib/popup.js:511
+#: src/lib/popup.js:549
 msgid "History"
 msgstr "السجل"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "Nothing copied yet"
 msgstr "لم يُنسخ شيء بعد"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "No results"
 msgstr "لا نتائج"
 
-#: src/lib/popup.js:534
+#: src/lib/popup.js:572
 msgid "Private Mode is on — copies are not recorded"
 msgstr "الوضع الخاص مفعّل — لا تُسجَّل النسخ"
 
-#: src/lib/popup.js:535
+#: src/lib/popup.js:573
 msgid "Copied text and images will appear here"
 msgstr "ستظهر هنا النصوص والصور المنسوخة"
 
-#: src/lib/popup.js:536
+#: src/lib/popup.js:574
 msgid "Try a different search or filter"
 msgstr "جرّب بحثًا أو مرشّحًا آخر"
 
-#: src/lib/popup.js:598
+#: src/lib/popup.js:636
 msgid "Show in Folder"
 msgstr "أظهر في المجلد"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Unpin"
 msgstr "ألغِ التثبيت"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Pin"
 msgstr "ثبّت"
 
-#: src/lib/popup.js:606
+#: src/lib/popup.js:644
 msgid "Delete"
 msgstr "احذف"
 
-#: src/lib/popup.js:838
+#: src/lib/popup.js:876
 msgid "Clear clipboard history?"
 msgstr "أتريد مسح سجل الحافظة؟"
 
-#: src/lib/popup.js:839
+#: src/lib/popup.js:877
 msgid "All entries except pinned ones will be deleted. This cannot be undone."
 msgstr "ستُحذف كل العناصر عدا المثبتة. لا يمكن التراجع عن هذا."
 
-#: src/lib/popup.js:840
+#: src/lib/popup.js:878
 msgid "Clear"
 msgstr "امسح"
 
-#: src/lib/popup.js:890 src/lib/popup.js:908
+#: src/lib/popup.js:928 src/lib/popup.js:946
 msgid "Could not open"
 msgstr "تعذّر الفتح"
 

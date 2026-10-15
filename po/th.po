@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clipboard+\n"
 "Report-Msgid-Bugs-To: https://github.com/uuRCnn/clipboard-plus/issues\n"
-"POT-Creation-Date: 2026-10-10 19:41+0300\n"
+"POT-Creation-Date: 2026-10-15 22:50+0300\n"
 "PO-Revision-Date: 2026-10-10 12:00+0300\n"
 "Last-Translator: Dukha\n"
 "Language-Team: Thai\n"
@@ -508,68 +508,68 @@ msgstr "ข้อความ"
 msgid "Settings"
 msgstr "การตั้งค่า"
 
-#: src/lib/popup.js:416
+#: src/lib/popup.js:454
 #, javascript-format
 msgid "Press Tab to filter by %s"
 msgstr "กด Tab เพื่อกรองตาม %s"
 
-#: src/lib/popup.js:509
+#: src/lib/popup.js:547
 msgid "Pinned"
 msgstr "ปักหมุด"
 
-#: src/lib/popup.js:511
+#: src/lib/popup.js:549
 msgid "History"
 msgstr "ประวัติ"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "Nothing copied yet"
 msgstr "ยังไม่มีการคัดลอก"
 
-#: src/lib/popup.js:531
+#: src/lib/popup.js:569
 msgid "No results"
 msgstr "ไม่มีผลลัพธ์"
 
-#: src/lib/popup.js:534
+#: src/lib/popup.js:572
 msgid "Private Mode is on — copies are not recorded"
 msgstr "โหมดส่วนตัวเปิดอยู่ — ไม่บันทึกสิ่งที่คัดลอก"
 
-#: src/lib/popup.js:535
+#: src/lib/popup.js:573
 msgid "Copied text and images will appear here"
 msgstr "ข้อความและรูปภาพที่คัดลอกจะแสดงที่นี่"
 
-#: src/lib/popup.js:536
+#: src/lib/popup.js:574
 msgid "Try a different search or filter"
 msgstr "ลองค้นหาหรือใช้ตัวกรองอื่น"
 
-#: src/lib/popup.js:598
+#: src/lib/popup.js:636
 msgid "Show in Folder"
 msgstr "แสดงในโฟลเดอร์"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Unpin"
 msgstr "เลิกปักหมุด"
 
-#: src/lib/popup.js:601
+#: src/lib/popup.js:639
 msgid "Pin"
 msgstr "ปักหมุด"
 
-#: src/lib/popup.js:606
+#: src/lib/popup.js:644
 msgid "Delete"
 msgstr "ลบ"
 
-#: src/lib/popup.js:838
+#: src/lib/popup.js:876
 msgid "Clear clipboard history?"
 msgstr "ล้างประวัติคลิปบอร์ดหรือไม่?"
 
-#: src/lib/popup.js:839
+#: src/lib/popup.js:877
 msgid "All entries except pinned ones will be deleted. This cannot be undone."
 msgstr "รายการทั้งหมดยกเว้นที่ปักหมุดจะถูกลบ ไม่สามารถย้อนกลับได้"
 
-#: src/lib/popup.js:840
+#: src/lib/popup.js:878
 msgid "Clear"
 msgstr "ล้าง"
 
-#: src/lib/popup.js:890 src/lib/popup.js:908
+#: src/lib/popup.js:928 src/lib/popup.js:946
 msgid "Could not open"
 msgstr "เปิดไม่ได้"
 
